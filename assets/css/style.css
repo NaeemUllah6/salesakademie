@@ -1,0 +1,76 @@
+header{
+    background: var(--Nuetral-nuetral-50, #F3F3F5);
+    position: sticky;
+    top: 0;
+}
+header .nav-menu a{
+   padding:34px 16px ;
+   text-decoration: none;
+}
+header .nav-menu a:hover{
+    background-color:#FCA311;
+    color: var(--Global-black);
+}
+header .non-binding-btn{
+    padding: 14px 16px;
+    border-radius: 8px;
+    background: var(--Primary-500, #FCA311);
+}
+header .non-binding-btn:hover{
+    color:#FFF;
+    background: #0A090C;
+
+}
+
+.main_hero_sec{
+   
+}
+.hero-column-1{
+    padding: 96px 80px 63px;
+}
+.Learn-hero{
+    border-radius: 36px;
+    border: 1px solid var(--Nuetral-nuetral-100, #D9DADF);
+    padding: 6px 16px;
+    width: fit-content;
+}
+.sales-span{
+    position: relative;
+    display: block;
+}
+.sales-span::after{
+    position: absolute;
+    background-image: url(../images/icons/sales-layer.svg);
+    content: "";
+    width: 100%;
+    height: 20px;
+    bottom: -12px;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+}
+.Nachster{
+    border-radius: var(--border-redius-md, 12px);
+border: 1px solid var(--Nuetral-nuetral-100, #D9DADF);
+background: #FAFAFA;
+}
+/* .hero-column-2{
+    background-image: url(../images/hero-bg.png);
+    background-size: 100% 100%;
+    
+} */
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1070px) {
+    header .nav-menu a {
+        font-size: 14px;
+    }
+
+
+}

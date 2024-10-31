@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    color: #000000;
+
+}
+
+body {
+    font-family: "Fira Sans";
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1280px !important;
+    width: 100%;
+}
+
+:root {
+    --Global-black: #181818;
+    --Primary-yellow: #FCA311;
+    --Nuetral-black-800: #484A54;
+    --Nuetral-black-900: #373940;
+    --body-white: #FBFBFB;
+    --secondary-950:#163036;
+    --text-black2:#262626;
+}
+
+.Global-black { color: var(--Global-black,#181818);}
+.Primary-yellow { color: var(--Primary-yellow,#FCA311);}
+.Nuetral-black-800{color:var(--Nuetral-black-800,#484A54) ;}
+.Nuetral-black-900{color:var(--Nuetral-black-900,#373940) ;}
+.body-white {color: var( --body-white,#FBFBFB);}
+.secondary-950{color: var(--secondary-950, #163036);}
+.text-black2 {color: var(--text-black2, #262626);}
+
+
+
+.fs_60 {
+    font-size: 60px;
+}
+.fs_16 {
+    font-size: 16px;
+}
+
+
+.fw_400 {
+    font-weight: 400;
+}
+.fw_500 {
+    font-weight: 500;
+}
+.fw_600 {
+    font-weight: 600;
+}
+.fw_700 {
+    font-weight: 700;
+}
+
+.lh_24{
+    line-height: 24px;
+}
+.lh_72{
+    line-height: 72px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1370px) {}
+
+@media screen and (max-width: 1240px) {
+.fs_md_60 {
+    font-size: 40px;
+}
+}
