@@ -1,0 +1,49 @@
+.ForEmpAgency_hero{
+    background-image: url(../images/emp-agency-hero.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 170px 0px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+
+}
+.Course__Overview_sec{
+    padding: 80px 0px 60px 0px;
+}
+.Course__Overview_im img{
+    border-radius: 18px;
+    width: 100%;
+    max-width: 400px;
+    height: 430px;
+}
+.Course__Overview_content{
+    max-width: 816px;
+}
+.Course__Overview_mian{
+    display: flex;
+    gap: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+    .ForEmpAgency_hero{
+        padding: 100px 0px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .ForEmpAgency_hero{
+        padding: 70px 0px;
+    }
+}
