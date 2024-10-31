@@ -53,10 +53,12 @@ h1, h2, h3, h4, h5, p {
 .fs_16 {
     font-size: 16px;
 }
-.fs_24 {
+.fs_24{
     font-size: 24px;
 }
-
+.fs_44{
+    font-size: 44px;
+}
 
 .fw_400 {
     font-weight: 400;
@@ -70,7 +72,12 @@ h1, h2, h3, h4, h5, p {
 .fw_700 {
     font-weight: 700;
 }
-
+.ln_32{
+    line-height: 32px;
+}
+.ln_24{
+    line-height: 24px;
+}
 .lh_24{
     line-height: 24px;
 }
@@ -80,10 +87,29 @@ h1, h2, h3, h4, h5, p {
 .lh_72{
     line-height: 72px;
 }
-
-
-
-
+.pd_6_16{
+    padding: 6px 16px;
+}
+.border-white{
+    border: 1px solid #D9DADF;
+}
+.radius_36{
+    border-radius: 36px;
+}
+.mt_12{
+    margin-top: 12px;
+}
+.mt_40{
+    margin-top: 40px;
+}
+.mx__1111{
+    max-width: 1111px;
+    width: 100%;
+    margin: 0 auto;
+}
+.bdr_lft_yellow{
+    border-left: 2px solid #FCA311;
+}
 
 
 
@@ -114,10 +140,22 @@ h1, h2, h3, h4, h5, p {
     font-size: 40px;
 }
 }
-@media screen and (max-width: 550px) {
 
-.fs_60 {
-    font-size: 38px;
+
+@media screen and (max-width: 991px) {
+        .fs_md_35{
+            font-size: 35px;
+        }
 }
+@media screen and (max-width: 550px) {
+    .fs_sm_28{
+        font-size: 28px;
+    }
+    .fw_sm_600{
+        font-weight: 600;
+    }
+    .fs_60 {
+        font-size: 38px;
+    }
 
 }
