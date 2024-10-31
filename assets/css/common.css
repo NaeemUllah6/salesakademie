@@ -53,6 +53,9 @@ h1, h2, h3, h4, h5, p {
 .fs_16 {
     font-size: 16px;
 }
+.fs_24 {
+    font-size: 24px;
+}
 
 
 .fw_400 {
@@ -70,6 +73,9 @@ h1, h2, h3, h4, h5, p {
 
 .lh_24{
     line-height: 24px;
+}
+.lh_32{
+    line-height: 32px;
 }
 .lh_72{
     line-height: 72px;
@@ -90,10 +96,28 @@ h1, h2, h3, h4, h5, p {
 
 
 
-@media screen and (max-width: 1370px) {}
+@media screen and (max-width: 1360px) {
+    .fs_60 {
+        font-size: 50px;
+    }
+    .lh_72 {
+        line-height: 60px;
+    }
+
+}
+@media screen and (max-width: 1180px) {
+    
+}
 
 @media screen and (max-width: 1240px) {
 .fs_md_60 {
     font-size: 40px;
 }
+}
+@media screen and (max-width: 550px) {
+
+.fs_60 {
+    font-size: 38px;
+}
+
 }
