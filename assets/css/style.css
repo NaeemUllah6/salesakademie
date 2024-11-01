@@ -27,7 +27,7 @@ header .nav-menu a:hover{
 
 .main_hero_sec{
    width: 100%;
-   max-width: 2040px;
+   max-width: 1440px;
    margin: 0 auto;
    background: var(--secondary-950, #163036);
    padding-top: 92px;
@@ -93,6 +93,59 @@ box-shadow: 0px 4px 21.7px 0px rgba(255, 255, 255, 0.10);
     background: var(--secondary-950, #163036);
     padding: 128px 0 80px; 
     margin-top: -43px;
+}
+.Beginnen-card{
+    border-radius: var(--border-redius-xxlg, 24px);
+background: var(--secondary-900, #284A51);
+padding: 24px;
+height: 100%;
+}
+.Beginnen-card .Beginnen-icon{
+    border-radius: 50%;
+    background: var(--secondary-800, #2C575E);
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.Unsere-section{
+    background: var(--Nuetral-nuetral-50, #F3F3F5); 
+}
+.Kursdauer-card{
+    padding: 24px;
+    border-radius: 18px;
+    background: var(--Global-white, #FFF);
+    height: 100%;
+}
+.kursdauer-icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--Primary-100, #FFF4C5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.future-card{
+    border-radius: 18px;
+    background: var(--Nuetral-nuetral-50, #F3F3F5);
+    padding: 80px 32px;
+    height: 100%;
+
+}
+.future-card .future-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -120px;
+    transition: margin-top 0.3s ease; /* Adjust duration and easing as needed */
+}
+
+.future-card:hover .future-icon {
+    margin-top: 0;
 }
 
 
