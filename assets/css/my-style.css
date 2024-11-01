@@ -1,49 +1,101 @@
-.ForEmpAgency_hero{
-    background-image: url(../images/emp-agency-hero.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 170px 0px;
-    align-items: center;
-    text-align: center;
-    display: flex;
-
+.ForEmpAgency_hero {
+  background-image: url(../images/emp-agency-hero.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 170px 0px;
+  align-items: center;
+  text-align: center;
+  display: flex;
 }
-.Course__Overview_sec{
-    padding: 80px 0px 60px 0px;
+.Course__Overview_sec {
+  padding: 80px 0px 60px 0px;
 }
-.Course__Overview_im img{
+.Course__Overview_im img {
+  border-radius: 18px;
+  width: 100%;
+  max-width: 400px;
+  height: 426px;
+}
+.Course__Overview_content {
+  max-width: 816px;
+}
+.Certificates_sec{
+    padding-bottom: 80px;
+}
+.Course__Overview_mian {
+  display: flex;
+  gap: 40px;
+}
+.download_info_btn:hover svg path {
+  fill: white;
+}
+.certificate_bx{
+    border: 1px solid  #C6C8D0;
+    padding: 24px;
     border-radius: 18px;
-    width: 100%;
-    max-width: 400px;
-    height: 430px;
 }
-.Course__Overview_content{
-    max-width: 816px;
+.Certificates_main_container{
+    gap: 24px;
+    flex-wrap: nowrap;
 }
-.Course__Overview_mian{
-    display: flex;
-    gap: 40px;
+.offerings_sec{
+    padding: 80px 0px;
+    background-color: #163036;
+    text-align: center;
 }
 
 
 
 
 
-
-
-
-
-
-
-
-
-@media screen and (max-width: 991px) {
-    .ForEmpAgency_hero{
-        padding: 100px 0px;
+  @media screen and (max-width: 991px) {
+    .ForEmpAgency_hero {
+      padding: 100px 0px;
     }
+    .Course__Overview_im img {
+      height: 400px;
+    }
+    .gp_24_md{
+        gap: 24px;
+    }
+    .row.mt-5.gp_24_md{
+        margin-top: 24px !important;
+    }
+  .Course__Overview_mian {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .Overview_sub_content {
+    padding-left: 15px;
+  }
+  .Course__Overview_sec {
+    padding: 24px 0px;
+  }
+  .Certificates_main_container{
+    flex-wrap: wrap;
+    padding: 0px 10px 0px 10px;
+  }
 }
 @media screen and (max-width: 550px) {
-    .ForEmpAgency_hero{
-        padding: 70px 0px;
-    }
+  .ForEmpAgency_hero {
+    padding: 70px 0px;
+  }
+  .ForEmpAgency_hero {
+    background-image: url(../images/emp-agency-hero-mobile.png);
+  }
+  .ForEmpAgency_hero {
+    padding: 130px 0px 70px 0px;
+  }
+  .Course__Overview_mian{
+    gap: 24px;
+  }
+  .text-center-sm{
+    text-align: center;
+  }
+  .Certificates_sec{
+    padding-bottom: 24px;
+}
+.offerings_sec{
+    padding: 24px 0px;
+}
 }
