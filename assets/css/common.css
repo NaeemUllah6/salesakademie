@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, p {
     padding: 6px 16px;
 }
 .border-white{
-    border: 1px solid #D9DADF;
+    border: 1px solid #D9DADF !important;
 }
 .radius_36{
     border-radius: 36px;
