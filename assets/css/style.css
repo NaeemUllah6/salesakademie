@@ -243,7 +243,7 @@ height: 100%;
         transform: translateX(-50%);
     }
     .hero-column-1 {
-        padding: 29px 10px 63px;
+        padding: 29px 10px 30px;
     }
     .sales-span::after {
         width: 270px;
@@ -259,6 +259,9 @@ height: 100%;
     .sagen-card{
         border: 1px solid var(--Nuetral-nuetral-100, #D9DADF);
     }
+    .Learn-hero{
+        margin: 0 auto;
+      }
 }
 @media screen and (max-width: 375px) {
     .fs_60 {
