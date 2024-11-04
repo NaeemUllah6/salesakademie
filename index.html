@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="./assets/css/common.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/my-style.css">
+  <link rel="stylesheet" href="./assets/css/naeem.css">
+
 
   <title>Home | Sales Akademie</title>
 </head>
@@ -18,9 +20,13 @@
     <div class="header-top">
       <div class="container">
         <div class="d-flex align-items-center justify-content-between py-lg-0 py-3">
-          <a href=""><img src="./assets/images/main-logo.png" alt="main-logo"></a>
+          <a href="index.html"><img src="./assets/images/main-logo.png" alt="main-logo"></a>
           <!-- Hamburger button for small screens -->
-          <div class="col-6 d-lg-none text-end">
+          <div class="d-flex d-lg-none w-100 justify-content-end">
+            <select class="language_toggle">
+              <option value="en">En</option>
+              <option value="gr">Gr</option>
+            </select>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
               aria-controls="offcanvasMenu">
               <span class="navbar-toggler-icon">
@@ -34,17 +40,30 @@
 
           <!-- Menu Section (visible on larger screens) -->
           <div class="d-lg-flex d-none nav-menu">
-            <a class="Global-black fs_16 fw_400 lh_24" href="#">Home</a>
-            <a class="Global-black fs_16 fw_400 lh_24" href="#">For Employment Agencies</a>
-            <a class="Global-black fs_16 fw_400 lh_24" href="#">The Teaching Team</a>
-            <a class="Global-black fs_16 fw_400 lh_24" href="#">Course Structure</a>
-            <a class="Global-black fs_16 fw_400 lh_24" href="#">Partner</a>
+            <a class="Global-black fs_16 fw_400 lh_24" data-localize="home" href="index.html">Home</a>
+            <a class="Global-black fs_16 fw_400 lh_24" data-localize="foremp" href="ForEmpAgency.html">For Employment Agencies</a>
+            <a class="Global-black fs_16 fw_400 lh_24" data-localize="teaching_team" href="teaching_team.html">The Teaching Team</a>
+            <a class="Global-black fs_16 fw_400 lh_24" data-localize="course_str" href="course-structure.html">Course Structure</a>
+            <a class="Global-black fs_16 fw_400 lh_24" data-localize="partner" href="partners.html">Partner</a>
           </div>
           <!-- Custom Button Section -->
-          <div class="d-lg-block d-none">
-            <a href="#" class="non-binding-btn Global-black fs_16 fw_400 lh_24 text-decoration-none">Non-Binding
-              Inquiry</a>
-          </div>
+          <div class="d-flex align-items-center gap-3">
+            <!-- <div class="switcher">
+              <select class="select2 language_toggle">
+                <option value="en">EN</option>
+                <option value="cz">CZ</option>
+                </select>
+            </div> -->
+            <select class="language_toggle d-lg-block d-none">
+              <option value="en">En</option>
+              <option value="gr">Gr</option>
+            </select>
+              <div class="d-lg-block d-none">
+                <a href="#" data-localize="heaer__btn"
+                    class="non-binding-btn Global-black fs_16 fw_400 lh_24 text-decoration-none">Non-Binding
+                    Inquiry</a>
+            </div>
+         </div>
         </div>
       </div>
 
@@ -56,16 +75,20 @@
         </div>
         <div class="offcanvas-body">
           <div class="d-flex gap-4 flex-column">
-            <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" href="">Home</a>
-            <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" href="#">For Employment Agencies</a>
-            <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" href="#">The Teaching Team</a>
-            <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" href="#">Course Structure</a>
-            <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" href="#">Partner</a>
+            <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" data-localize="home" href="index.html">Home</a>
+            <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" data-localize="foremp" href="ForEmpAgency.html">For Employment
+              Agencies</a>
+            <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" data-localize="teaching_team" href="teaching_team.html">The Teaching
+              Team</a>
+            <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" data-localize="course_str" href="course-structure.html">Course
+              Structure</a>
+            <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" data-localize="partner" href="partners.html">Partner</a>
           </div>
           <div class="pt-4">
-            <a style="width:fit-content" href="#"
+            <a style="width:fit-content" href="#" data-localize="heaer__btn"
               class="non-binding-btn Global-black fs_16 fw_400 lh_24 text-decoration-none d-block">Non-Binding
               Inquiry</a>
+
           </div>
         </div>
       </div>
@@ -77,17 +100,18 @@
     <div class="row">
       <div class="col-lg-6 hero-column-1">
         <div class="Learn-hero">
-          <p class="fs_16 fw_400 lh_24 Nuetral-black-800">Praktisch lernen und starten</p>
+          <p class="fs_16 fw_400 lh_24 Nuetral-black-800" data-localize="Praktisch">Praktisch lernen und starten</p>
         </div>
-        <h2 class="fs_60 lh_72 fw_700 pt-2">Start Your Future In <span class="sales-span">Sales Academy</span></h2>
-        <p class="fs_16 fw_400 lh_24 Nuetral-black-900 pt-3">Funded by the state, supported by experts. We’ll get you
+        <h2 class="fs_60 lh_72 fw_700 pt-2" data-localize="txt1">Start Your Future In </h2>
+        <h2 class="fs_60 lh_72 fw_700 sales-span" data-localize="txt2">Sales Academy</h2>
+        <p class="fs_16 fw_400 lh_24 Nuetral-black-900 pt-3" data-localize="txt3">Funded by the state, supported by experts. We’ll get you
           ready for a successful career in sales. 100% funded, 100% practical, 100% remote.</p>
         <div class="Nachster d-lg-block d-none">
           <div class="d-flex align-items-start gap-3 pt-3">
             <i style="color: #777B8B; font-size: 20px;padding-top: 5px;" class="fa-solid fa-calendar-days"></i>
             <div>
               <p class="Global-black fs_24 fw_600 lh_32">20. Jan 2025</p>
-              <p class="Primary-yellow fs_24 fw_600 lh_32">Nächster Kursstart</p>
+              <p class="Primary-yellow fs_24 fw_600 lh_32" data-localize="txt4">Nachster Kursstart</p>
             </div>
           </div>
           <div class="nachtr-icon">
@@ -130,13 +154,13 @@
   <section class="Beginnen-section">
     <div class="container">
       <div class="Learn-hero m-auto">
-        <p class="fs_16 fw_400 lh_24 body-white d-flex justify-content-center">Unser Angebot</p>
+        <p class="fs_16 fw_400 lh_24 body-white d-flex justify-content-center" data-localize="txt5">Our Range</p>
       </div>
-      <h2 class="fs_44 fs_md_35 fs_sm_28 fw_700 fw_sm_600 text-white text-center pt-3">Beginnen Sie Ihre Zukunft in der
+      <h2 class="fs_44 fs_md_35 fs_sm_28 fw_700 fw_sm_600 text-white text-center pt-3" data-localize="txt6">Beginnen Sie Ihre Zukunft in der
         Sales Academy
       </h2>
       <div style="width:100%; max-width:785px;" class="m-auto">
-        <p class="mt-3 fs_16 fw_400 ln_24 text-white text-center">Lorem ipsum dolor sit amet consectetur. Adipiscing
+        <p class="mt-3 fs_16 fw_400 lh_24 text-white text-center" data-localize="txt7">Lorem ipsum dolor sit amet consectetur. Adipiscing
           venenatis id sed justo vitae in. Sed aliquet lacinia a risus lacus risus. Risus et diam porta adipiscing. Sem
           risus morbi Phasellus non.</p>
       </div>
@@ -154,9 +178,8 @@
                   fill="white" />
               </svg>
             </div>
-            <h2 class="fs_24 text-center text-white pt-4">100 % staatlich finanziert</h2>
-            <p class="mt-3 fs_16 fw_400 ln_24 text-white text-center">Dank des Ausbildungsgutscheins der Agentur für
-              Arbeit, des Jobcenters oder der Rentenversicherung ist unser Kurs für jeden Teilnehmer völlig kostenlos.
+            <h2 class="fs_24 text-center text-white pt-4" data-localize="txt8">100 % staatlich finanziert</h2>
+            <p class="mt-3 fs_16 fw_400 lh_24 text-white text-center" data-localize="txt12">Thanks to the training voucher from the employment agency, the job center or the pension insurance, our course is completely free for every participant.
             </p>
           </div>
         </div>
@@ -176,10 +199,8 @@
                   fill="white" />
               </svg>
             </div>
-            <h2 class="fs_24 text-center text-white pt-4">Professionelle Dozenten und Tutoren</h2>
-            <p class="mt-3 fs_16 fw_400 ln_24 text-white text-center">Unsere Dozenten und Tutoren verfügen über eine
-              hohe Qualifikation im Vertriebsbereich. Sie bringen jahrelange Expertise mit, um Sie bestmöglich auf Ihre
-              berufliche Zukunft vorzubereiten.
+            <h2 class="fs_24 text-center text-white pt-4" data-localize="txt9">Professionelle Dozenten und Tutoren</h2>
+            <p class="mt-3 fs_16 fw_400 lh_24 text-white text-center" data-localize="txt13">Our lecturers and tutors are highly qualified in the sales field. They bring years of expertise to the table to prepare you as best as possible for your professional future.
             </p>
           </div>
         </div>
@@ -193,9 +214,8 @@
                   fill="white" />
               </svg>
             </div>
-            <h2 class="fs_24 text-center text-white pt-4">Heimbüro (Remote-Einrichtung)</h2>
-            <p class="mt-3 fs_16 fw_400 ln_24 text-white text-center">Unser Training findet komplett im Homeoffice
-              statt. Als Teilnehmer erhalten Sie ein Macbook, eine Maus und ein Headset.
+            <h2 class="fs_24 text-center text-white pt-4" data-localize="txt10">Home Office (Remote Setup)</h2>
+            <p class="mt-3 fs_16 fw_400 lh_24 text-white text-center" data-localize="txt14">Our training takes place entirely in the home office. As a participant, you will receive a Macbook, a mouse and a headset.
             </p>
           </div>
         </div>
@@ -221,10 +241,8 @@
                   fill="white" />
               </svg>
             </div>
-            <h2 class="fs_24 text-center text-white pt-4">Vermittlungs- und Karriereberatung</h2>
-            <p class="mt-3 fs_16 fw_400 ln_24 text-white text-center">Unser Career Success Manager bereitet Sie auf
-              Vorstellungsgespräche vor und findet über unsere eigenen Kanäle und Partnerunternehmen den Job Ihrer
-              Träume für Sie.
+            <h2 class="fs_24 text-center text-white pt-4" data-localize="txt11">Placement and Career Advice</h2>
+            <p class="mt-3 fs_16 fw_400 lh_24 text-white text-center" data-localize="txt15">Our Career Success Manager will prepare you for job interviews and find you the job of your dreams through our own channels and partner companies.
             </p>
           </div>
         </div>
@@ -235,20 +253,16 @@
     <div class="container">
       <div style="width: 100%; max-width:844px;" class="">
         <div class="Learn-hero">
-          <p class="fs_16 fw_400 lh_24 Nuetral-black-800">Praktisch lernen und starten</p>
+          <p class="fs_16 fw_400 lh_24 Nuetral-black-800" data-localize="txt16">What we Offer</p>
         </div>
-        <h2 class="fs_44 fs_md_35 fs_sm_28 fw_700 fw_sm_600 Global-black text-center-sm pt-2">Unsere Kursangebote
-          zusammengefasst </h2>
-        <p class="mt-3 fs_16 fw_400 ln_24 Nuetral-black-900 text-center-sm">Mit unserem Kurs legen Sie den Grundstein
-          für einen erfolgreichen Berufswechsel in die Welt des Vertriebs. Nach Abschluss des Kurses sind Sie ein
-          zertifizierter Vertriebsprofi und erhalten auch Zertifikate in den am häufigsten verwendeten CRM-Tools im
-          Vertrieb (Hubspot, Salesforce).</p>
+        <h2 class="fs_44 fs_md_35 fs_sm_28 fw_700 fw_sm_600 Global-black text-center-sm pt-2" data-localize="txt17">Our course offerings summarized </h2>
+        <p class="mt-3 fs_16 fw_400 lh_24 Nuetral-black-900 text-center-sm" data-localize="txt18">With our course, you lay the foundation for a successful career change into the world of sales. After completing the course, you will be a certified sales professional and will also receive certificates in the most commonly used CRM tools in sales (Hubspot, Salesforce).</p>
       </div>
       <div class="row mt-2">
         <!-- 1 -->
         <div class="col-lg-4 col-sm-6 mt-3">
           <div class="Kursdauer-card">
-            <div class="d-flex align-item-center gap-3">
+            <div class="detail-card-kur">
               <div class="kursdauer-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -257,8 +271,8 @@
                 </svg>
               </div>
               <div class="">
-                <h2 class="fs_24 fw_600 ln_32 Global-black">Kursdauer</h2>
-                <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">8 Monate (Vollzeit)</p>
+                <h2 class="fs_24 fw_600 ln_32 Global-black" data-localize="txt19">Course Duration</h2>
+                <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900" data-localize="txt20">8 months (full-time)</p>
               </div>
             </div>
           </div>
@@ -266,7 +280,7 @@
         <!-- 2 -->
         <div class="col-lg-4 col-sm-6 mt-3">
           <div class="Kursdauer-card">
-            <div class="d-flex align-item-center gap-3">
+            <div class="detail-card-kur">
               <div class="kursdauer-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -278,8 +292,8 @@
                 </svg>
               </div>
               <div class="">
-                <h2 class="fs_24 fw_600 ln_32 Global-black">Kosten</h2>
-                <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">100% staatlich finanziert</p>
+                <h2 class="fs_24 fw_600 ln_32 Global-black" data-localize="txt21">Cost</h2>
+                <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900" data-localize="txt22">100% state-funded</p>
               </div>
             </div>
           </div>
@@ -287,7 +301,7 @@
         <!-- 3 -->
         <div class="col-lg-4 col-sm-6 mt-3">
           <div class="Kursdauer-card">
-            <div class="d-flex align-item-center gap-3">
+            <div class="detail-card-kur">
               <div class="kursdauer-icon">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -311,8 +325,8 @@
                 </svg>
               </div>
               <div class="">
-                <h2 class="fs_24 fw_600 ln_32 Global-black">Number of Participants</h2>
-                <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">15 to 25 participants</p>
+                <h2 class="fs_24 fw_600 ln_32 Global-black" data-localize="txt23">Number of Participants</h2>
+                <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900" data-localize="txt24">15 to 25 participants</p>
               </div>
             </div>
           </div>
@@ -320,7 +334,7 @@
         <!-- 4 -->
         <div class="col-lg-4 col-sm-6 mt-3">
           <div class="Kursdauer-card">
-            <div class="d-flex align-item-center gap-3">
+            <div class="detail-card-kur">
               <div class="kursdauer-icon">
                 <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -329,8 +343,8 @@
                 </svg>
               </div>
               <div class="">
-                <h2 class="fs_24 fw_600 ln_32 Global-black">Course Language</h2>
-                <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">Good knowledge of German is necessary</p>
+                <h2 class="fs_24 fw_600 ln_32 Global-black" data-localize="txt25">Course Language</h2>
+                <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900" data-localize="txt26">Good knowledge of German is necessary</p>
               </div>
             </div>
           </div>
@@ -338,7 +352,7 @@
         <!-- 5 -->
         <div class="col-lg-4 col-sm-6 mt-3">
           <div class="Kursdauer-card">
-            <div class="d-flex align-item-center gap-3">
+            <div class="detail-card-kur">
               <div class="kursdauer-icon">
                 <svg width="32" height="35" viewBox="0 0 32 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -347,8 +361,8 @@
                 </svg>
               </div>
               <div class="">
-                <h2 class="fs_24 fw_600 ln_32 Global-black">Location</h2>
-                <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">Virtual Classroom (Home Office)</p>
+                <h2 class="fs_24 fw_600 ln_32 Global-black" data-localize="txt27">Location</h2>
+                <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900" data-localize="txt28">Virtual Classroom (Home Office)</p>
               </div>
             </div>
           </div>
@@ -356,7 +370,7 @@
         <!-- 6 -->
         <div class="col-lg-4 col-sm-6 mt-3">
           <div class="Kursdauer-card">
-            <div class="d-flex align-item-center gap-3">
+            <div class="detail-card-kur">
               <div class="kursdauer-icon">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -368,8 +382,8 @@
                 </svg>
               </div>
               <div class="">
-                <h2 class="fs_24 fw_600 ln_32 Global-black">Hardware Included for Free</h2>
-                <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">Macbook, mouse and headset</p>
+                <h2 class="fs_24 fw_600 ln_32 Global-black" data-localize="txt29">Hardware Included for Free</h2>
+                <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900" data-localize="txt30">Macbook, mouse and headset</p>
               </div>
             </div>
           </div>
@@ -377,31 +391,29 @@
       </div>
       <div class="pt-4">
         <button type="button" style="width:fit-content;margin: 0 auto;"
-            class="download_info_btn non-binding-btn Global-black fs_16 fw_400 lh_24 text-decoration-none d-block border-0 mt-3">Download
-            Info Flyer
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.99967 2.7085C10.4599 2.7085 10.833 3.0816 10.833 3.54183V8.95848H12.083C12.4201 8.95848 12.7239 9.16156 12.8529 9.4729C12.9819 9.78431 12.9106 10.1427 12.6723 10.3811L10.5889 12.4644C10.2635 12.7899 9.73584 12.7899 9.41042 12.4644L7.32711 10.3811C7.08877 10.1427 7.01748 9.78431 7.14647 9.4729C7.27545 9.16156 7.57932 8.95848 7.91637 8.95848H9.16634V3.54183C9.16634 3.0816 9.53942 2.7085 9.99967 2.7085Z"
-                    fill="#181818" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M3.19647 13.1365C3.65044 13.0608 4.07979 13.3675 4.15546 13.8215L4.34002 14.9288C4.40698 15.3306 4.75464 15.6251 5.16201 15.6251H14.8383C15.2456 15.6251 15.5933 15.3306 15.6603 14.9288L15.8448 13.8215C15.9205 13.3675 16.3498 13.0608 16.8038 13.1365C17.2578 13.2121 17.5644 13.6415 17.4888 14.0955L17.3043 15.2028C17.1033 16.4082 16.0603 17.2918 14.8383 17.2918H5.16201C3.93991 17.2918 2.89693 16.4082 2.69603 15.2028L2.51147 14.0955C2.43581 13.6415 2.74249 13.2121 3.19647 13.1365Z"
-                    fill="#181818" />
-            </svg>
+          class="download_info_btn non-binding-btn Global-black fs_16 fw_400 lh_24 text-decoration-none d-block border-0 mt-3" data-localize="txt31">Download
+          Info Flyer
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M9.99967 2.7085C10.4599 2.7085 10.833 3.0816 10.833 3.54183V8.95848H12.083C12.4201 8.95848 12.7239 9.16156 12.8529 9.4729C12.9819 9.78431 12.9106 10.1427 12.6723 10.3811L10.5889 12.4644C10.2635 12.7899 9.73584 12.7899 9.41042 12.4644L7.32711 10.3811C7.08877 10.1427 7.01748 9.78431 7.14647 9.4729C7.27545 9.16156 7.57932 8.95848 7.91637 8.95848H9.16634V3.54183C9.16634 3.0816 9.53942 2.7085 9.99967 2.7085Z"
+              fill="#181818" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M3.19647 13.1365C3.65044 13.0608 4.07979 13.3675 4.15546 13.8215L4.34002 14.9288C4.40698 15.3306 4.75464 15.6251 5.16201 15.6251H14.8383C15.2456 15.6251 15.5933 15.3306 15.6603 14.9288L15.8448 13.8215C15.9205 13.3675 16.3498 13.0608 16.8038 13.1365C17.2578 13.2121 17.5644 13.6415 17.4888 14.0955L17.3043 15.2028C17.1033 16.4082 16.0603 17.2918 14.8383 17.2918H5.16201C3.93991 17.2918 2.89693 16.4082 2.69603 15.2028L2.51147 14.0955C2.43581 13.6415 2.74249 13.2121 3.19647 13.1365Z"
+              fill="#181818" />
+          </svg>
 
         </button>
-    </div>
+      </div>
     </div>
   </section>
   <section class="future-section px-80">
     <div class="container">
       <div class="m-auto text-center">
         <div class="Learn-hero  m-auto">
-          <p class="fs_16 fw_400 lh_24 Nuetral-black-800">Unser Angebot</p>
+          <p class="fs_16 fw_400 lh_24 Nuetral-black-800" data-localize="txt32">Our Range</p>
         </div>
-        <h2 class="fs_44 fs_md_35 fs_sm_28 fw_700 fw_sm_600 Global-black text-center pt-2">Starten Sie Ihre Zukunft in
-          der Sales Academy </h2>
-        <p style="width: 100%; max-width:785px;" class="mt-3 fs_16 fw_400 ln_24 Nuetral-black-900 text-center m-auto">
+        <h2 class="fs_44 fs_md_35 fs_sm_28 fw_700 fw_sm_600 Global-black text-center pt-2" data-localize="txt33">Start Your Future In Sales Academy </h2>
+        <p style="width: 100%; max-width:785px;" class="mt-3 fs_16 fw_400 lh_24 Nuetral-black-900 text-center m-auto" data-localize="txt34">
           Lorem ipsum dolor sit amet consectetur. Adipiscing venenatis id sed justo vitae in. Sed aliquet lacinia a
           risus lacus risus. Risus et diam porta adipiscing. Sem risus morbi phasellus non.</p>
       </div>
@@ -411,19 +423,15 @@
             <div class="future-icon">
               <img src="assets/images/icons/check-plus.svg">
             </div>
-            <h2 class="fs_24 fw_600 ln_32 Global-black mt_40">Starten Sie Ihre Zukunft in der Sales Academy</h2>
-            <h3 class="fs_20 lh_30 Nuetral-black-900 mt_32">Als Arbeitssuchender registriert sein</h3>
-            <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">Sie müssen als Arbeitssuchender registriert sein, um
-              für einen Bildungsgutschein berechtigt zu sein</p>
-            <h3 class="fs_20 lh_30 Nuetral-black-900 mt_32">Deutschkenntnisse auf B2-Niveau</h3>
-            <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">Das ist wichtig, um eine reibungslose Kommunikation im
-              Kurs sicherzustellen</p>
-            <h3 class="fs_20 lh_30 Nuetral-black-900 mt_32">Bereitschaft, 8 Monate Ihrer Zeit zu investieren</h3>
-            <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">Die Kursdauer ist optimal angepasst, um Ihnen alles
-              beizubringen, was Sie für Ihren Job benötigen</p>
-            <h3 class="fs_20 lh_30 Nuetral-black-900 mt_32">Motivation und Lernbereitschaft mitbringen</h3>
-            <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">Wir bringen Ihnen alles bei, aber Sie müssen auch
-              selbst wollen</p>
+            <h2 class="fs_24 fw_600 ln_32 Global-black mt_40" data-localize="txt35">Start Your Future In Sales Academy</h2>
+            <h3 class="fs_20 lh_30 Nuetral-black-900 mt_32" data-localize="txt36">Be registered as a job seeker</h3>
+            <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900" data-localize="txt37">You must be registered as a job seeker to be eligible for a training voucher</p>
+            <h3 class="fs_20 lh_30 Nuetral-black-900 mt_32" data-localize="txt38">Have German language skills at B2 level</h3>
+            <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900" data-localize="txt39">This is important to ensure smooth communication in the course</p>
+            <h3 class="fs_20 lh_30 Nuetral-black-900 mt_32" data-localize="txt40">Willingness to invest 8 months of your time</h3>
+            <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900" data-localize="txt41">The course duration is optimally adapted to teach you everything you need for your job</p>
+            <h3 class="fs_20 lh_30 Nuetral-black-900 mt_32" data-localize="txt42">Bring motivation and willingness to learn</h3>
+            <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900" data-localize="txt43">We will teach you everything, but you must also want to do it yourself</p>
           </div>
 
 
@@ -433,18 +441,18 @@
             <div class="future-icon">
               <img src="assets/images/icons/check-cross.svg">
             </div>
-            <h2 class="fs_24 fw_600 ln_32 Global-black mt_40">Start Your Future In Sales Academy</h2>
-            <h3 class="fs_20 lh_30 Nuetral-black-900 mt_32">Forego your unemployment benefit</h3>
-            <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">With the education voucher you will continue to receive
+            <h2 class="fs_24 fw_600 ln_32 Global-black mt_40" data-localize="txt44">Start Your Future In Sales Academy</h2>
+            <h3 class="fs_20 lh_30 Nuetral-black-900 mt_32" data-localize="txt45">Forego your unemployment benefit</h3>
+            <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900" data-localize="txt46">With the education voucher you will continue to receive
               your unemployment benefit</p>
-            <h3 class="fs_20 lh_30 Nuetral-black-900 mt_32">Have experience in sales</h3>
-            <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">Our trained teaching team will teach you everything
+            <h3 class="fs_20 lh_30 Nuetral-black-900 mt_32" data-localize="txt47">Have experience in sales</h3>
+            <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900" data-localize="txt48">Our trained teaching team will teach you everything
               from A to Z so no previous knowledge is necessary</p>
-            <h3 class="fs_20 lh_30 Nuetral-black-900 mt_32">Use your own PC or own one</h3>
-            <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">We will send you a new MacBook before the course starts
+            <h3 class="fs_20 lh_30 Nuetral-black-900 mt_32" data-localize="txt49">Use your own PC or own one</h3>
+            <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900" data-localize="txt50">We will send you a new MacBook before the course starts
             </p>
-            <h3 class="fs_20 lh_30 Nuetral-black-900 mt_32">Decide between your children and the course</h3>
-            <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">Together we will always find a compromise so that you
+            <h3 class="fs_20 lh_30 Nuetral-black-900 mt_32" data-localize="txt51">Decide between your children and the course</h3>
+            <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900" data-localize="txt52">Together we will always find a compromise so that you
               can also be there for your children</p>
           </div>
 
@@ -452,7 +460,7 @@
         </div>
       </div>
       <div class="d-flex justify-content-center mt-5">
-        <a href="#" class="non-binding-btn Global-black fs_16 fw_400 lh_24 text-decoration-none">Download Info Flyer
+        <a href="#" class="non-binding-btn Global-black fs_16 fw_400 lh_24 text-decoration-none" data-localize="txt53">Contact us now
           <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M6.6665 4.16675C6.20627 4.16675 5.83317 4.53985 5.83317 5.00008C5.83317 5.46031 6.20627 5.83341 6.6665 5.83341H12.988L4.41058 14.4108C4.08515 14.7362 4.08515 15.2639 4.41058 15.5893C4.73602 15.9147 5.26365 15.9147 5.5891 15.5893L14.1665 7.01192V13.3334C14.1665 13.7937 14.5396 14.1667 14.9998 14.1667C15.4601 14.1667 15.8332 13.7937 15.8332 13.3334V5.00008C15.8332 4.53985 15.4601 4.16675 14.9998 4.16675H6.6665Z"
@@ -465,7 +473,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-3 col-sm-6 mt-lg-0 mt-3">
-          <p class="fs_24 fw_400 lh_32 text-white">Ihr Erfolg ist uns am <br> wichtigsten</p>
+          <p class="fs_24 fw_400 lh_32 text-white" data-localize="txt54">Ihr Erfolg ist uns am <br> wichtigsten</p>
         </div>
         <div class="col-lg-5 col-sm-6 mt-lg-0 mt-3">
           <p class="fs_60 lh_72 fw_700 Primary-yellow">45k - 100K
@@ -479,10 +487,12 @@
                   fill="#FCA311" />
               </svg></span>
           </p>
+          <p class="fs_18 fw_400 body-white" data-localize="txt55">Salary</p>
         </div>
         <div class="col-lg-4 col-sm-6 mt-lg-0 mt-3">
           <p class="fs_60 lh_72 fw_700 Primary-yellow">100K +
           </p>
+          <p class="fs_18 fw_400 body-white" data-localize="txt56">Vacancies</p>
         </div>
       </div>
 
@@ -492,14 +502,15 @@
     <div class="container">
       <div class="m-auto text-center">
         <div class="Learn-hero  m-auto">
-          <p class="fs_16 fw_400 lh_24 Nuetral-black-800">Vertrieb</p>
+          <p class="fs_16 fw_400 lh_24 Nuetral-black-800" data-localize="txt57">Sales</p>
         </div>
-        <h2 class="fs_44 fs_md_35 fs_sm_28 fw_700 fw_sm_600 Global-black text-center pt-2">Das Herz jedes erfolgreichen
-          Unternehmens </h2>
-        <p style="width: 100%; max-width:785px;" class="mt-3 fs_16 fw_400 ln_24 Nuetral-black-900 text-center m-auto">
-          Gute Verkäufer sind für jedes Unternehmen von unschätzbarem Wert. Sie bilden das Herz erfolgreicher
-          Verkaufsteams, tragen erheblich zur Steigerung des Umsatzes bei, schaffen langfristige Kundenbeziehungen und
-          fördern das Wachstum und die Stabilität des Unternehmens.</p>
+        <h2 class="fs_44 fs_md_35 fs_sm_28 fw_700 fw_sm_600 Global-black text-center pt-2" data-localize="txt58">The heart of every successful company </h2>
+        <p style="width: 100%; max-width:785px;" class="mt-3 fs_16 fw_400 lh_24 Nuetral-black-900 text-center m-auto" data-localize="txt59">
+          Good salespeople are invaluable to any company. They form the heart of successful sales teams, contribute significantly to increasing sales, creating long-term customer relationships and promoting the growth and stability of the company.</p>
+        <div class="mt-4 m-auto d-flex justify-content-center">
+          <a href="#" class="non-binding-btn Global-black fs_16 fw_400 lh_24 text-decoration-none" data-localize="txt60">Non-Binding
+            Inquiry</a>
+        </div>
       </div>
     </div>
     <div class="certifications_awards_section mt-4">
@@ -549,13 +560,13 @@
       <div class="Careers_content">
         <div class="mx_850">
           <div class="m_auto_sm" style="width: fit-content;">
-            <p class="fs_16 fw_400 ln_24 Nuetral-black-800 pd_6_16 border-white radius_36"
-              style="border: 1px solid #D9DADF;">Careers
+            <p class="fs_16 fw_400 lh_24 Nuetral-black-800 pd_6_16 border-white radius_36"
+              style="border: 1px solid #D9DADF;" data-localize="txt61">Careers
             </p>
           </div>
-          <h2 class="fs_44 fw_700 Global-black mt-2 fs_sm_28 text-center-sm">What careers can I pursue as a graduate of
+          <h2 class="fs_44 fw_700 Global-black mt-2 fs_sm_28 text-center-sm" data-localize="txt62">What careers can I pursue as a graduate of
             the Sales Academy?</h2>
-          <p class="fs_16 fw_400 secondary-950 mt-3">Lorem ipsum dolor sit amet consectetur. Elementum sed mauris sed
+          <p class="fs_16 fw_400 secondary-950 mt-3" data-localize="txt63">Lorem ipsum dolor sit amet consectetur. Elementum sed mauris sed
             quis consectetur orci. Suspendisse arcu turpis vulputate commodo et eu semper tellus quis. Fringilla lorem
             tortor feugiat nulla sed. Faucibus aliquam proin tristique elementum ut egestas.</p>
         </div>
@@ -565,11 +576,11 @@
               <div class="d-flex flex-column justify-content-between">
                 <div>
                   <img src="./assets/images/Careers-1.png" alt="Careers-1">
-                  <h2 class="fs_24 fw_600 Global-black mt-4">Course Duration</h2>
-                  <p class="fs_16 fw_400 Nuetral-black-900 mt-2">Lorem ipsum dolor sit amet consectetur. Hac egestas
+                  <h2 class="fs_24 fw_600 Global-black mt-4" data-localize="txt64">Course Duration</h2>
+                  <p class="fs_16 fw_400 Nuetral-black-900 mt-2" data-localize="txt65">Lorem ipsum dolor sit amet consectetur. Hac egestas
                     venenatis euismod massa massa mi mauris neque dolor.</p>
                 </div>
-                <a class="text-decoration-none Primary-yellow fs_16 fw_500" href="#">Read more <svg width="20"
+                <a class="text-decoration-none Primary-yellow fs_16 fw_500" href="#" data-localize="txt66">Read more <svg width="20"
                     height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M6.66699 4.16675C6.20676 4.16675 5.83366 4.53985 5.83366 5.00008C5.83366 5.46031 6.20676 5.83341 6.66699 5.83341H12.9885L4.41107 14.4108C4.08563 14.7362 4.08563 15.2639 4.41107 15.5893C4.73651 15.9147 5.26414 15.9147 5.58958 15.5893L14.167 7.01192V13.3334C14.167 13.7937 14.5401 14.1667 15.0003 14.1667C15.4606 14.1667 15.8337 13.7937 15.8337 13.3334V5.00008C15.8337 4.53985 15.4606 4.16675 15.0003 4.16675H6.66699Z"
@@ -584,11 +595,11 @@
               <div class="d-flex flex-column justify-content-between gap-4">
                 <div>
                   <img src="./assets/images/Careers-2.png" alt="Careers-2">
-                  <h2 class="fs_24 fw_600 Global-black mt-4">Customer Service (After Sale)</h2>
-                  <p class="fs_16 fw_400 Nuetral-black-900 mt-2">Lorem ipsum dolor sit amet consectetur. Hac egestas
+                  <h2 class="fs_24 fw_600 Global-black mt-4" data-localize="txt67">Customer Service (After Sale)</h2>
+                  <p class="fs_16 fw_400 Nuetral-black-900 mt-2" data-localize="txt68">Lorem ipsum dolor sit amet consectetur. Hac egestas
                     venenatis euismod massa massa mi mauris neque dolor.</p>
                 </div>
-                <a class="text-decoration-none Primary-yellow fs_16 fw_500" href="#">Read more <svg width="20"
+                <a class="text-decoration-none Primary-yellow fs_16 fw_500" href="#" data-localize="txt66">Read more <svg width="20"
                     height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M6.66699 4.16675C6.20676 4.16675 5.83366 4.53985 5.83366 5.00008C5.83366 5.46031 6.20676 5.83341 6.66699 5.83341H12.9885L4.41107 14.4108C4.08563 14.7362 4.08563 15.2639 4.41107 15.5893C4.73651 15.9147 5.26414 15.9147 5.58958 15.5893L14.167 7.01192V13.3334C14.167 13.7937 14.5401 14.1667 15.0003 14.1667C15.4606 14.1667 15.8337 13.7937 15.8337 13.3334V5.00008C15.8337 4.53985 15.4606 4.16675 15.0003 4.16675H6.66699Z"
@@ -603,11 +614,11 @@
               <div class="d-flex flex-column justify-content-between gap-4">
                 <div>
                   <img src="./assets/images/Careers-3.png" alt="Careers-3">
-                  <h2 class="fs_24 fw_600 Global-black mt-4">Account Manage</h2>
-                  <p class="fs_16 fw_400 Nuetral-black-900 mt-2">Lorem ipsum dolor sit amet consectetur. Hac egestas
+                  <h2 class="fs_24 fw_600 Global-black mt-4" data-localize="txt69">Account Manage</h2>
+                  <p class="fs_16 fw_400 Nuetral-black-900 mt-2" data-localize="txt70">Lorem ipsum dolor sit amet consectetur. Hac egestas
                     venenatis euismod massa massa mi mauris neque dolor.</p>
                 </div>
-                <a class="text-decoration-none Primary-yellow fs_16 fw_500" href="#">Read more <svg width="20"
+                <a class="text-decoration-none Primary-yellow fs_16 fw_500" href="#" data-localize="txt66">Read more <svg width="20"
                     height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M6.66699 4.16675C6.20676 4.16675 5.83366 4.53985 5.83366 5.00008C5.83366 5.46031 6.20676 5.83341 6.66699 5.83341H12.9885L4.41107 14.4108C4.08563 14.7362 4.08563 15.2639 4.41107 15.5893C4.73651 15.9147 5.26414 15.9147 5.58958 15.5893L14.167 7.01192V13.3334C14.167 13.7937 14.5401 14.1667 15.0003 14.1667C15.4606 14.1667 15.8337 13.7937 15.8337 13.3334V5.00008C15.8337 4.53985 15.4606 4.16675 15.0003 4.16675H6.66699Z"
@@ -622,11 +633,11 @@
               <div class="d-flex flex-column justify-content-between gap-4">
                 <div>
                   <img src="./assets/images/Careers-1.png" alt="Careers-1">
-                  <h2 class="fs_24 fw_600 Global-black mt-4">IT Consultant</h2>
-                  <p class="fs_16 fw_400 Nuetral-black-900 mt-2">Lorem ipsum dolor sit amet consectetur. Hac egestas
+                  <h2 class="fs_24 fw_600 Global-black mt-4" data-localize="txt71">IT Consultant</h2>
+                  <p class="fs_16 fw_400 Nuetral-black-900 mt-2" data-localize="txt72">Lorem ipsum dolor sit amet consectetur. Hac egestas
                     venenatis euismod massa massa mi mauris neque dolor.</p>
                 </div>
-                <a class="text-decoration-none Primary-yellow fs_16 fw_500" href="#">Read more <svg width="20"
+                <a class="text-decoration-none Primary-yellow fs_16 fw_500" href="#" data-localize="txt66">Read more <svg width="20"
                     height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M6.66699 4.16675C6.20676 4.16675 5.83366 4.53985 5.83366 5.00008C5.83366 5.46031 6.20676 5.83341 6.66699 5.83341H12.9885L4.41107 14.4108C4.08563 14.7362 4.08563 15.2639 4.41107 15.5893C4.73651 15.9147 5.26414 15.9147 5.58958 15.5893L14.167 7.01192V13.3334C14.167 13.7937 14.5401 14.1667 15.0003 14.1667C15.4606 14.1667 15.8337 13.7937 15.8337 13.3334V5.00008C15.8337 4.53985 15.4606 4.16675 15.0003 4.16675H6.66699Z"
@@ -645,57 +656,55 @@
     <div class="container">
       <div class="m-auto text-center">
         <div class="Learn-hero  m-auto">
-          <p class="fs_16 fw_400 lh_24 Nuetral-black-800">Testimonials</p>
+          <p class="fs_16 fw_400 lh_24 Nuetral-black-800" data-localize="txt73">Testimonials</p>
         </div>
-        <h2 class="fs_44 fs_md_35 fs_sm_28 fw_700 fw_sm_600 Global-black text-center pt-2">Was sagen unsere Teilnehmer
+        <h2 class="fs_44 fs_md_35 fs_sm_28 fw_700 fw_sm_600 Global-black text-center pt-2" data-localize="txt74">What do our participants say about us?
           über uns? </h2>
-        <p style="width: 100%; max-width:785px;" class="mt-3 fs_16 fw_400 ln_24 Nuetral-black-900 text-center m-auto">
-          Gute Verkäufer sind für jedes Unternehmen von unschätzbarem Wert. Sie bilden das Herz erfolgreicher
-          Verkaufsteams, tragen erheblich zur Steigerung des Umsatzes bei, schaffen langfristige Kundenbeziehungen und
-          fördern das Wachstum und die Stabilität des Unternehmens.</p>
+        <p style="width: 100%; max-width:785px;" class="mt-3 fs_16 fw_400 lh_24 Nuetral-black-900 text-center m-auto" data-localize="txt75">
+          Good salespeople are invaluable to any company. They form the heart of successful sales teams, contribute significantly to increasing sales, creating long-term customer relationships and promoting the growth and stability of the company.</p>
       </div>
       <div class="d-sm-block d-none">
         <div class="row mt-4 ">
           <div class="col-lg-4 col-sm-6 mt-4">
             <div class="sagen-card">
-              <p  class="fs_16 fw_400 ln_24 Nuetral-black-900">
-                „Ich war äußerst zufrieden mit den Ergebnissen der Zusammenarbeit mit der Kreativagentur und kann sie nur wärmstens empfehlen...</p>
-                <h2 class="fs_18 fw_500 Global-black mt_32">Johan Doe</h2>
-                <div class="d-flex gap-1 pt-1">
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                </div>
+              <p class="fs_16 fw_400 lh_24 Nuetral-black-900" data-localize="txt76">
+                “I have been extremely happy with the results of working with the creative agency, and I would highly recommend them to...</p>
+              <h2 class="fs_18 fw_500 Global-black mt_32" data-localize="txt77">Johan Doe</h2>
+              <div class="d-flex gap-1 pt-1">
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+              </div>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 mt-4">
             <div class="sagen-card">
-              <p  class="fs_16 fw_400 ln_24 Nuetral-black-900">
-                „Ich war äußerst zufrieden mit den Ergebnissen der Zusammenarbeit mit der Kreativagentur und kann sie nur wärmstens empfehlen...</p>
-                <h2 class="fs_18 fw_500 Global-black mt_32">Johan Doe</h2>
-                <div class="d-flex gap-1 pt-1">
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                </div>
+              <p class="fs_16 fw_400 lh_24 Nuetral-black-900" data-localize="txt78">
+                “I have been extremely happy with the results of working with the creative agency, and I would highly recommend them to...</p>
+              <h2 class="fs_18 fw_500 Global-black mt_32" data-localize="txt79">Johan Doe</h2>
+              <div class="d-flex gap-1 pt-1">
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+              </div>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 mt-4">
             <div class="sagen-card">
-              <p  class="fs_16 fw_400 ln_24 Nuetral-black-900">
-                „Ich war äußerst zufrieden mit den Ergebnissen der Zusammenarbeit mit der Kreativagentur und kann sie nur wärmstens empfehlen...</p>
-                <h2 class="fs_18 fw_500 Global-black mt_32">Johan Doe</h2>
-                <div class="d-flex gap-1 pt-1">
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                </div>
+              <p class="fs_16 fw_400 lh_24 Nuetral-black-900" data-localize="txt80">
+                “I have been extremely happy with the results of working with the creative agency, and I would highly recommend them to...</p>
+              <h2 class="fs_18 fw_500 Global-black mt_32" data-localize="txt81">Johan Doe</h2>
+              <div class="d-flex gap-1 pt-1">
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -703,71 +712,259 @@
       <!-- 1 -->
       <div id="zufrieden" class="position-relative slid carousel slide h-100 d-sm-none d-block mt-4">
         <div class="carousel-inner h-100">
-            <div class="carousel-item active h-100">
-              <div class="sagen-card">
-                <p  class="fs_16 fw_400 ln_24 Nuetral-black-900">
-                  „Ich war äußerst zufrieden mit den Ergebnissen der Zusammenarbeit mit der Kreativagentur und kann sie nur wärmstens empfehlen...</p>
-                  <h2 class="fs_18 fw_500 Global-black mt_32">Johan Doe</h2>
-                  <div class="d-flex gap-1 pt-1">
-                    <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                    <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                    <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                    <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                    <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  </div>
+          <div class="carousel-item active h-100">
+            <div class="sagen-card">
+              <p class="fs_16 fw_400 lh_24 Nuetral-black-900" data-localize="txt82">
+                “I have been extremely happy with the results of working with the creative agency, and I would highly recommend them to...</p>
+              <h2 class="fs_18 fw_500 Global-black mt_32" data-localize="txt83">Johan Doe</h2>
+              <div class="d-flex gap-1 pt-1">
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
               </div>
             </div>
+          </div>
 
-            <div class="carousel-item  h-100">
-              <div class="sagen-card">
-                <p  class="fs_16 fw_400 ln_24 Nuetral-black-900">
-                  „Ich war äußerst zufrieden mit den Ergebnissen der Zusammenarbeit mit der Kreativagentur und kann sie nur wärmstens empfehlen...</p>
-                  <h2 class="fs_18 fw_500 Global-black mt_32">Johan Doe</h2>
-                  <div class="d-flex gap-1 pt-1">
-                    <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                    <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                    <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                    <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                    <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  </div>
+          <div class="carousel-item  h-100">
+            <div class="sagen-card">
+              <p class="fs_16 fw_400 lh_24 Nuetral-black-900" data-localize="txt84">
+                “I have been extremely happy with the results of working with the creative agency, and I would highly recommend them to...</p>
+              <h2 class="fs_18 fw_500 Global-black mt_32" data-localize="txt85">Johan Doe</h2>
+              <div class="d-flex gap-1 pt-1">
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i> 
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
               </div>
             </div>
+          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#zufrieden"
-            data-bs-slide="prev">
-            <span class="span-left span-button" aria-hidden="true"><svg
-                    xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33"
-                    fill="none">
-                    <path
-                        d="M19.9999 24.9307C19.9999 24.9307 12 19.0388 12 16.9307C12 14.8224 20 8.93066 20 8.93066"
-                        stroke="#ACAFBB" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg></span>
-            <span class="visually-hidden">Previous</span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#zufrieden" data-bs-slide="prev">
+          <span class="span-left span-button" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="32"
+              height="33" viewBox="0 0 32 33" fill="none">
+              <path d="M19.9999 24.9307C19.9999 24.9307 12 19.0388 12 16.9307C12 14.8224 20 8.93066 20 8.93066"
+                stroke="#ACAFBB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></span>
+          <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#zufrieden"
-            data-bs-slide="next">
-            <span class="span-right span-button" aria-hidden="true"><svg
-                    xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33"
-                    fill="none">
-                    <path
-                        d="M12.0001 8.93066C12.0001 8.93066 20 14.8225 20 16.9307C20 19.0389 12 24.9307 12 24.9307"
-                        stroke="#ACAFBB" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg></span>
-            <span class="visually-hidden">Next</span>
+        <button class="carousel-control-next" type="button" data-bs-target="#zufrieden" data-bs-slide="next">
+          <span class="span-right span-button" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="32"
+              height="33" viewBox="0 0 32 33" fill="none">
+              <path d="M12.0001 8.93066C12.0001 8.93066 20 14.8225 20 16.9307C20 19.0389 12 24.9307 12 24.9307"
+                stroke="#ACAFBB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></span>
+          <span class="visually-hidden">Next</span>
         </button>
-    </div>
-    <!-- 22 -->
- 
+      </div>
+      <!-- 22 -->
+
     </div>
   </section>
 
 
+  <!-- --------------------------------------Common section--------------------------------------- -->
+  <section class="common_section py_80">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-7 common-section-content">
+          <div class="d-flex flex-column justify-content-center gap-4">
+            <div>
+              <button class="team_button" data-localize="txt86">Unser Team</button>
+            </div>
+            <div style="max-width: 556px;">
+              <h2 class="fs_30 fw_700 lh_38 family_Fira Global-black fs_md fs_sm" data-localize="txt87">Are you ready to get
+                started with the Sales Academy?
+              </h2>
+            </div>
+            <div>
+              <p class="fs_16 lh_24 fw_400 family_Fira Nuetral-black-900" data-localize="txt88">Lorem ipsum dolor sit amet
+                consectetur.
+                Elementum sed mauris sed quis consectetur orci. Suspendisse arcu turpis vulputate
+                commodo et eu
+                semper tellus quis. Fringilla lorem tortor feugiat nulla sed. Faucibus aliquam proin
+                tristique
+                elementum ut egestas.</p>
+            </div>
+            <div class="d-flex mt-2 justify-content-lg-start justify-content-center">
+              <a href="" class="non-binding-btn text-decoration-none Global-black fs_16 fw_400 family_Fira" data-localize="txt89">Register
+                Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-5 carousel-column">
+          <div id="carouselExample" class="position-relative slid carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="bg-white carousel1">
+                  <div class="d-flex justify-content-between gap-2 p-4 ">
+                    <div class="">
+                      <img class="border carousel-img rounded-circle" src="assets/images/ghoona.svg" alt="">
+                    </div>
+                    <div class=" h-100">
+                      <div class="d-flex  flex-column gap-5">
+                        <div>
+                          <p class="fs_14 fw_400 family_Fira" data-localize="txt90">Contact our education advisor
+                          </p>
+                          <h3 class="fs_20 fw_600 lh_30 family_Fira" data-localize="txt91">Robert Rudolph</h3>
+                        </div>
+                        <div class="d-flex flex-column">
+                          <div>
+                            <div class="row">
+                              <div class="col-2">
+                                <img class="phone-img" src="assets/images/phone.svg" alt="">
+                              </div>
+
+                              <div class="col-10">
+                                <p class="fs_16 fw_400 family_Fira Nuetral-black-900">
+                                  03075437495</p>
+                                <p class="fs_16 fw_400 family_Fira Nuetral-black-900">
+                                  03075437495</p>
+                              </div>
+
+                            </div>
+
+                          </div>
+
+                          <div class="d-flex align-items-center gap-2">
+                            <div><img class="phone-img" src="assets/images/e-mail.svg" alt=""></div>
+                            <div>
+                              <p class="fs_16 fw_400 family_Fira Nuetral-black-900">
+                                robert.rudolph@sa-ak.de</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item  h-100">
+                <div class="bg-white carousel1 h-100">
+                  <div class="d-flex justify-content-between gap-2 p-4 h-100">
+                    <div class="">
+                      <img class="border rounded-circle carousel-img" src="assets/images/ghoona.svg" alt="">
+                    </div>
+                    <div class=" h-100">
+                      <div class="d-flex justify-content-between flex-column gap-5">
+                        <div>
+                          <p class="fs_14 fw_400 family_Fira" data-localize="txt90">Contact our education advisor
+                          </p>
+                          <h3 class="fs_20 fw_600 lh_30 family_Fira" data-localize="txt91">Robert Rudolph</h3>
+                        </div>
+                        <div class="d-flex flex-column">
+                          <div>
+                            <div class="row">
+                              <div class="col-2">
+                                <img class="phone-img" src="assets/images/phone.svg" alt="">
+                              </div>
+
+                              <div class="col-10">
+                                <p class="fs_16 fw_400 family_Fira Nuetral-black-900">
+                                  03075437495</p>
+                                <p class="fs_16 fw_400 family_Fira Nuetral-black-900">
+                                  03075437495</p>
+                              </div>
+
+                            </div>
+
+                          </div>
+
+                          <div class="d-flex align-items-center gap-2">
+                            <div><img class="phone-img" src="assets/images/e-mail.svg" alt=""></div>
+                            <div>
+                              <p class="fs_16 fw_400 family_Fira Nuetral-black-900">
+                                robert.rudolph@sa-ak.de</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="span-left span-button" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="32"
+                  height="33" viewBox="0 0 32 33" fill="none">
+                  <path d="M19.9999 24.9307C19.9999 24.9307 12 19.0388 12 16.9307C12 14.8224 20 8.93066 20 8.93066"
+                    stroke="#ACAFBB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="span-right span-button" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="32"
+                  height="33" viewBox="0 0 32 33" fill="none">
+                  <path d="M12.0001 8.93066C12.0001 8.93066 20 14.8225 20 16.9307C20 19.0389 12 24.9307 12 24.9307"
+                    stroke="#ACAFBB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="d-flex  flex-wrap flex-md-nowrap align-items-center justify-content-between gap-3">
+        <div>
+          <a href=""><img src="assets/images/logo-img 2.svg" alt=""></a>
+          <div class="d-flex  align-items-center gap-3 pt_60">
+            <a class="" href="#"><img src="assets/images/facebook.svg" alt=""></a>
+            <a class="footer-icon rounded-circle" href="#"><img src="assets/images/insta.svg" alt=""></a>
+            <a class="footer-icon rounded-circle" href="#"><img src="assets/images/linkedin.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="d-flex flex-wrap flex-md-nowrap gap-3 justify-content-between">
+          <a class="fs_16 fw_400 family_Fira body-white text-decoration-none" href="" data-localize="txt92">Terms and condition</a>
+          <a class="fs_16 fw_400 family_Fira body-white text-decoration-none" href="" data-localize="txt93">Privacy Policy</a>
+          <a class="fs_16 fw_400 family_Fira body-white text-decoration-none" href="" data-localize="txt94">Imprints</a>
+          <a class="fs_16 fw_400 family_Fira body-white text-decoration-none" href="" data-localize="txt95">Mission and Statment</a>
+        </div>
+
+  </footer>
+  </div>
+  <div class="footer-bar">
+    <div class="container">
+      <div class="d-flex flex-wrap flex-md-wrap  align-items-center justify-content-end footer-bar-kaka gap-3">
+        <div class="d-flex flex-wrap flex-md-nowrap align-items-center justify-content-between">
+          <div><img src="assets/images/Partner.svg" alt=""></div>
+        </div>
+        <div class="d-flex  align-items-center justify-content-start gap-3 flex-wrap">
+          <a href=""> <img class="img-fluid footer-bar-image1 " src="assets/images/1-removebg-preview 1.svg" alt=""></a>
+          <a href=""> <img class="img-fluid footer-bar-image2 " src="assets/images/banner2-removebg-preview.svg"
+              alt=""></a>
+          <a href=""> <img class="img-fluid footer-bar-image3 " src="assets/images/banner3-removebg-preview.svg"
+              alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
   <script src="./assets/js/bootstrap.js"></script>
+  <!--------------------------------- Jquery --------------------------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Jquery Localize -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localize/0.1.0/jquery.localize.min.js"
+    integrity="sha512-4ey3vzy6yNVmhaSgtKPZvOmm2AlfN6AWRxHWBsYGEtYIpuVEbXc5ZpoVPKMSkdRkgkb/TnlnpJCry6uPoCKCsQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localize/0.1.0/jquery.localize.js"
+    integrity="sha512-8cFOrybNSH+nRZ56bLnTW0ABP/qpx45QRZwuIvgjjQCIRVsEKDaqLtuq9QY5cJjlAz376K10rgHy/gc667K9NA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Jquery Localize Ends -->
+  <!-- custom-file -->
+  <script src="./assets/js/script.js"></script>
+
+
 </body>
 
 </html>
