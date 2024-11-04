@@ -199,6 +199,11 @@ height: 100%;
       border:1px solid var(--Nuetral-nuetral-100, #D9DADF) !important;
     box-shadow: drop-shadow(0px 4px 6.8px rgba(0, 0, 0, 0.05)) !important;
 }
+.detail-card-kur{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 12px;
+}
 
 
 
@@ -243,7 +248,7 @@ height: 100%;
         transform: translateX(-50%);
     }
     .hero-column-1 {
-        padding: 29px 10px 63px;
+        padding: 29px 10px 30px;
     }
     .sales-span::after {
         width: 270px;
@@ -259,6 +264,39 @@ height: 100%;
     .sagen-card{
         border: 1px solid var(--Nuetral-nuetral-100, #D9DADF);
     }
+    .Learn-hero{
+        margin: 0 auto;
+      }
+      .future-card .future-icon {
+        margin-top: -100px;
+
+      }
+      .future-icon img{
+        width: 50px;
+        height: 50px;
+        /* margin-top: -100px; */
+      }
+      .Beginnen-card .Beginnen-icon svg{
+        width: 34px;
+      }
+      .kursdauer-icon svg{
+        width: 34px;
+        height: 34px;
+      }
+      .Kursdauer-card {
+        padding: 24px 10px;
+      } 
+      .detail-card-kur {
+        grid-template-columns: 45px 1fr;
+    } 
+    .kursdauer-icon {
+        width: 45px;
+        height: 50px;
+    }
+    .kursdauer-icon svg{
+        width: 30px;
+        height: 30px;
+    }  
 }
 @media screen and (max-width: 375px) {
     .fs_60 {

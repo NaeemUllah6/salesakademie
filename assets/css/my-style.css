@@ -94,6 +94,67 @@
   background-color: #FBFBFB;
   padding: 68px 0px 80px 0px;
 }
+.systems__logos{
+  gap: 24px;
+}
+.faq_sec{
+  padding: 80px 0px;
+}
+.faq__tab_main{
+  display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+.faq__tab_main .accordion-item {
+  margin: 0;
+  border: 0;
+  border: 1px solid #E7E7E7;
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.faq__tabs .accordion-button:not(.collapsed) {
+  background: none;
+  box-shadow: none;
+}
+.faq__tab_main .accordion-body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #6B7280;
+  padding-top: 0;
+  /* display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: calc(26px* 3); */
+  line-height: 26px;
+  /* margin-bottom: 20px; */
+}
+.faq__tabs .accordion-button:focus{
+  box-shadow: none;
+}
+.accordion-button h2{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: #181818;
+}
+.accordion-button:not(.collapsed)::after{
+  background-image: url(../images/icons/not-closed.png);
+}
+.accordion-button::after{
+  background-image: url(../images/icons/closed.png);
+}
+.fade:not(.show){
+  opacity: 1 !important;
+}
+.tab-content>.tab-pane{
+  display: block;
+}
   @media screen and (max-width: 991px) {
     .ForEmpAgency_hero {
       padding: 100px 0px;
@@ -120,6 +181,13 @@
   .Certificates_main_container{
     flex-wrap: wrap;
     padding: 0px 10px 0px 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .faq__tab_main{
+    grid-template-columns: 1fr;
+    gap: 0;
   }
 }
 @media screen and (max-width: 550px) {
@@ -166,4 +234,53 @@
 .digital__sales_info{
   padding: 20px 12px;
 }
+.ForEmpAgency_hero.course-structure_sec {
+  background-image: url(../images/course-structure_sec-mobile.png);
+}
+.systems__logos{
+  gap: 10px !important;
+}
+.systems__logos img{
+  width: 60px;
+  height: 60px;
+}
+.w_sm_inherit{
+  width: inherit;
+}
+.sm-column-reverse{
+  flex-direction: column-reverse;
+}
+.digital__sales_info_main .col-lg-8.mt-5,
+.col-lg-4.mt-5{
+  margin-top: 20px !important;
+}
+.sm_justify__center{
+  justify-content: center;
+}
+.digital__sales_info_main .col-lg-4,
+.col-lg-8,
+.row.sm-column-reverse{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.accordion-button h2{
+  font-size: 16px;
+}
+.flx_colm{
+  flex-direction: column;
+}
+footer {
+  padding: 35px 0px;
+}
+.footer-bar {
+  padding: 25px 0px;
+}
+}
+@media screen and (max-width: 370px) {
+  .systems__logos img{
+    width: 50px;
+    height: 50px;
+  
+  }
+  
 }
