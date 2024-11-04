@@ -18,72 +18,89 @@
 <body>
   <header class="w-100">
     <div class="header-top">
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-between py-lg-0 py-3">
-                <a href=""><img src="./assets/images/main-logo.png" alt="main-logo"></a>
-                <!-- Hamburger button for small screens -->
-                <div class="col-6 d-lg-none text-end">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
-                        <span class="navbar-toggler-icon">
-                            <svg width="20" height="14" viewBox="0 0 20 14" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 7H19M1 1H19M1 13H19" stroke="#42307D" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </span>
-                    </button>
-                </div>
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between py-lg-0 py-3">
+          <a href="index.html"><img src="./assets/images/main-logo.png" alt="main-logo"></a>
+          <!-- Hamburger button for small screens -->
+          <div class="d-flex d-lg-none w-100 justify-content-end">
+            <select class="language_toggle">
+              <option value="en">En</option>
+              <option value="gr">Gr</option>
+            </select>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+              aria-controls="offcanvasMenu">
+              <span class="navbar-toggler-icon">
+                <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 7H19M1 1H19M1 13H19" stroke="#42307D" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+            </button>
+          </div>
 
-                <!-- Menu Section (visible on larger screens) -->
-                <div class="d-lg-flex d-none nav-menu">
-                    <a class="Global-black fs_16 fw_400 lh_24" href="index.html">Home</a>
-                    <a class="Global-black fs_16 fw_400 lh_24" href="ForEmpAgency.html">For Employment Agencies</a>
-                    <a class="Global-black fs_16 fw_400 lh_24" href="teaching_team.html">The Teaching Team</a>
-                    <a class="Global-black fs_16 fw_400 lh_24" href="course-structure.html">Course Structure</a>
-                    <a class="Global-black fs_16 fw_400 lh_24" href="partners.html">Partner</a>
-                </div>
-                <!-- Custom Button Section -->
-                <div class="d-lg-block d-none">
-                    <a href="#"
-                        class="non-binding-btn Global-black fs_16 fw_400 lh_24 text-decoration-none">Non-Binding
-                        Inquiry</a>
-                </div>
+          <!-- Menu Section (visible on larger screens) -->
+          <div class="d-lg-flex d-none nav-menu">
+            <a class="Global-black fs_16 fw_400 lh_24" href="index.html">Home</a>
+            <a class="Global-black fs_16 fw_400 lh_24" href="ForEmpAgency.html">For Employment Agencies</a>
+            <a class="Global-black fs_16 fw_400 lh_24" href="teaching_team.html">The Teaching Team</a>
+            <a class="Global-black fs_16 fw_400 lh_24" href="course-structure.html">Course Structure</a>
+            <a class="Global-black fs_16 fw_400 lh_24" href="partners.html">Partner</a>
+          </div>
+          <!-- Custom Button Section -->
+          <div class="d-flex align-items-center gap-3">
+            <!-- <div class="switcher">
+              <select class="select2 language_toggle">
+                <option value="en">EN</option>
+                <option value="cz">CZ</option>
+                </select>
+            </div> -->
+            <select class="language_toggle d-lg-block d-none">
+              <option value="en">En</option>
+              <option value="gr">Gr</option>
+            </select>
+              <div class="d-lg-block d-none">
+                <a href="#"
+                    class="non-binding-btn Global-black fs_16 fw_400 lh_24 text-decoration-none">Non-Binding
+                    Inquiry</a>
             </div>
+         </div>
         </div>
+      </div>
 
-        <!-- Offcanvas Menu for small screens -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
-            <div class="offcanvas-header">
-                <a href=""><img src="./assets/images/main-logo.png" alt="main-logo"></a>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <div class="d-flex gap-4 flex-column">
-                    <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" href="index.html">Home</a>
-                    <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" href="ForEmpAgency.html">For Employment
-                        Agencies</a>
-                    <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" href="teaching_team.html">The Teaching Team</a>
-                    <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" href="course-structure.html">Course Structure</a>
-                    <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" href="partners.html">Partner</a>
-                </div>
-                <div class="pt-4">
-                    <a style="width:fit-content" href="#"
-                        class="non-binding-btn Global-black fs_16 fw_400 lh_24 text-decoration-none d-block">Non-Binding
-                        Inquiry</a>
-
-                </div>
-            </div>
+      <!-- Offcanvas Menu for small screens -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+          <a href=""><img src="./assets/images/main-logo.png" alt="main-logo"></a>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+        <div class="offcanvas-body">
+          <div class="d-flex gap-4 flex-column">
+            <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" href="index.html">Home</a>
+            <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" href="ForEmpAgency.html">For Employment
+              Agencies</a>
+            <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" href="teaching_team.html">The Teaching
+              Team</a>
+            <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" href="course-structure.html">Course
+              Structure</a>
+            <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" href="partners.html">Partner</a>
+          </div>
+          <div class="pt-4">
+            <a style="width:fit-content" href="#"
+              class="non-binding-btn Global-black fs_16 fw_400 lh_24 text-decoration-none d-block">Non-Binding
+              Inquiry</a>
+
+          </div>
+        </div>
+      </div>
     </div>
-</header>
+  </header>
   <!-- hero-section -->
   <section class="main_hero_sec">
 
     <div class="row">
       <div class="col-lg-6 hero-column-1">
         <div class="Learn-hero">
-          <p class="fs_16 fw_400 lh_24 Nuetral-black-800">Praktisch lernen und starten</p>
+          <p class="fs_16 fw_400 lh_24 Nuetral-black-800" data-localize="Praktisch">Praktisch lernen und starten</p>
         </div>
         <h2 class="fs_60 lh_72 fw_700 pt-2">Start Your Future In <span class="sales-span">Sales Academy</span></h2>
         <p class="fs_16 fw_400 lh_24 Nuetral-black-900 pt-3">Funded by the state, supported by experts. We’ll get you
@@ -142,7 +159,7 @@
         Sales Academy
       </h2>
       <div style="width:100%; max-width:785px;" class="m-auto">
-        <p class="mt-3 fs_16 fw_400 ln_24 text-white text-center">Lorem ipsum dolor sit amet consectetur. Adipiscing
+        <p class="mt-3 fs_16 fw_400 lh_24 text-white text-center">Lorem ipsum dolor sit amet consectetur. Adipiscing
           venenatis id sed justo vitae in. Sed aliquet lacinia a risus lacus risus. Risus et diam porta adipiscing. Sem
           risus morbi Phasellus non.</p>
       </div>
@@ -161,7 +178,7 @@
               </svg>
             </div>
             <h2 class="fs_24 text-center text-white pt-4">100 % staatlich finanziert</h2>
-            <p class="mt-3 fs_16 fw_400 ln_24 text-white text-center">Dank des Ausbildungsgutscheins der Agentur für
+            <p class="mt-3 fs_16 fw_400 lh_24 text-white text-center">Dank des Ausbildungsgutscheins der Agentur für
               Arbeit, des Jobcenters oder der Rentenversicherung ist unser Kurs für jeden Teilnehmer völlig kostenlos.
             </p>
           </div>
@@ -183,7 +200,7 @@
               </svg>
             </div>
             <h2 class="fs_24 text-center text-white pt-4">Professionelle Dozenten und Tutoren</h2>
-            <p class="mt-3 fs_16 fw_400 ln_24 text-white text-center">Unsere Dozenten und Tutoren verfügen über eine
+            <p class="mt-3 fs_16 fw_400 lh_24 text-white text-center">Unsere Dozenten und Tutoren verfügen über eine
               hohe Qualifikation im Vertriebsbereich. Sie bringen jahrelange Expertise mit, um Sie bestmöglich auf Ihre
               berufliche Zukunft vorzubereiten.
             </p>
@@ -200,7 +217,7 @@
               </svg>
             </div>
             <h2 class="fs_24 text-center text-white pt-4">Heimbüro (Remote-Einrichtung)</h2>
-            <p class="mt-3 fs_16 fw_400 ln_24 text-white text-center">Unser Training findet komplett im Homeoffice
+            <p class="mt-3 fs_16 fw_400 lh_24 text-white text-center">Unser Training findet komplett im Homeoffice
               statt. Als Teilnehmer erhalten Sie ein Macbook, eine Maus und ein Headset.
             </p>
           </div>
@@ -228,7 +245,7 @@
               </svg>
             </div>
             <h2 class="fs_24 text-center text-white pt-4">Vermittlungs- und Karriereberatung</h2>
-            <p class="mt-3 fs_16 fw_400 ln_24 text-white text-center">Unser Career Success Manager bereitet Sie auf
+            <p class="mt-3 fs_16 fw_400 lh_24 text-white text-center">Unser Career Success Manager bereitet Sie auf
               Vorstellungsgespräche vor und findet über unsere eigenen Kanäle und Partnerunternehmen den Job Ihrer
               Träume für Sie.
             </p>
@@ -245,7 +262,7 @@
         </div>
         <h2 class="fs_44 fs_md_35 fs_sm_28 fw_700 fw_sm_600 Global-black text-center-sm pt-2">Unsere Kursangebote
           zusammengefasst </h2>
-        <p class="mt-3 fs_16 fw_400 ln_24 Nuetral-black-900 text-center-sm">Mit unserem Kurs legen Sie den Grundstein
+        <p class="mt-3 fs_16 fw_400 lh_24 Nuetral-black-900 text-center-sm">Mit unserem Kurs legen Sie den Grundstein
           für einen erfolgreichen Berufswechsel in die Welt des Vertriebs. Nach Abschluss des Kurses sind Sie ein
           zertifizierter Vertriebsprofi und erhalten auch Zertifikate in den am häufigsten verwendeten CRM-Tools im
           Vertrieb (Hubspot, Salesforce).</p>
@@ -264,7 +281,7 @@
               </div>
               <div class="">
                 <h2 class="fs_24 fw_600 ln_32 Global-black">Kursdauer</h2>
-                <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">8 Monate (Vollzeit)</p>
+                <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900">8 Monate (Vollzeit)</p>
               </div>
             </div>
           </div>
@@ -285,7 +302,7 @@
               </div>
               <div class="">
                 <h2 class="fs_24 fw_600 ln_32 Global-black">Kosten</h2>
-                <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">100% staatlich finanziert</p>
+                <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900">100% staatlich finanziert</p>
               </div>
             </div>
           </div>
@@ -318,7 +335,7 @@
               </div>
               <div class="">
                 <h2 class="fs_24 fw_600 ln_32 Global-black">Number of Participants</h2>
-                <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">15 to 25 participants</p>
+                <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900">15 to 25 participants</p>
               </div>
             </div>
           </div>
@@ -336,7 +353,7 @@
               </div>
               <div class="">
                 <h2 class="fs_24 fw_600 ln_32 Global-black">Course Language</h2>
-                <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">Good knowledge of German is necessary</p>
+                <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900">Good knowledge of German is necessary</p>
               </div>
             </div>
           </div>
@@ -354,7 +371,7 @@
               </div>
               <div class="">
                 <h2 class="fs_24 fw_600 ln_32 Global-black">Location</h2>
-                <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">Virtual Classroom (Home Office)</p>
+                <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900">Virtual Classroom (Home Office)</p>
               </div>
             </div>
           </div>
@@ -375,7 +392,7 @@
               </div>
               <div class="">
                 <h2 class="fs_24 fw_600 ln_32 Global-black">Hardware Included for Free</h2>
-                <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">Macbook, mouse and headset</p>
+                <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900">Macbook, mouse and headset</p>
               </div>
             </div>
           </div>
@@ -383,20 +400,19 @@
       </div>
       <div class="pt-4">
         <button type="button" style="width:fit-content;margin: 0 auto;"
-            class="download_info_btn non-binding-btn Global-black fs_16 fw_400 lh_24 text-decoration-none d-block border-0 mt-3">Download
-            Info Flyer
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.99967 2.7085C10.4599 2.7085 10.833 3.0816 10.833 3.54183V8.95848H12.083C12.4201 8.95848 12.7239 9.16156 12.8529 9.4729C12.9819 9.78431 12.9106 10.1427 12.6723 10.3811L10.5889 12.4644C10.2635 12.7899 9.73584 12.7899 9.41042 12.4644L7.32711 10.3811C7.08877 10.1427 7.01748 9.78431 7.14647 9.4729C7.27545 9.16156 7.57932 8.95848 7.91637 8.95848H9.16634V3.54183C9.16634 3.0816 9.53942 2.7085 9.99967 2.7085Z"
-                    fill="#181818" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M3.19647 13.1365C3.65044 13.0608 4.07979 13.3675 4.15546 13.8215L4.34002 14.9288C4.40698 15.3306 4.75464 15.6251 5.16201 15.6251H14.8383C15.2456 15.6251 15.5933 15.3306 15.6603 14.9288L15.8448 13.8215C15.9205 13.3675 16.3498 13.0608 16.8038 13.1365C17.2578 13.2121 17.5644 13.6415 17.4888 14.0955L17.3043 15.2028C17.1033 16.4082 16.0603 17.2918 14.8383 17.2918H5.16201C3.93991 17.2918 2.89693 16.4082 2.69603 15.2028L2.51147 14.0955C2.43581 13.6415 2.74249 13.2121 3.19647 13.1365Z"
-                    fill="#181818" />
-            </svg>
+          class="download_info_btn non-binding-btn Global-black fs_16 fw_400 lh_24 text-decoration-none d-block border-0 mt-3">Download
+          Info Flyer
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M9.99967 2.7085C10.4599 2.7085 10.833 3.0816 10.833 3.54183V8.95848H12.083C12.4201 8.95848 12.7239 9.16156 12.8529 9.4729C12.9819 9.78431 12.9106 10.1427 12.6723 10.3811L10.5889 12.4644C10.2635 12.7899 9.73584 12.7899 9.41042 12.4644L7.32711 10.3811C7.08877 10.1427 7.01748 9.78431 7.14647 9.4729C7.27545 9.16156 7.57932 8.95848 7.91637 8.95848H9.16634V3.54183C9.16634 3.0816 9.53942 2.7085 9.99967 2.7085Z"
+              fill="#181818" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M3.19647 13.1365C3.65044 13.0608 4.07979 13.3675 4.15546 13.8215L4.34002 14.9288C4.40698 15.3306 4.75464 15.6251 5.16201 15.6251H14.8383C15.2456 15.6251 15.5933 15.3306 15.6603 14.9288L15.8448 13.8215C15.9205 13.3675 16.3498 13.0608 16.8038 13.1365C17.2578 13.2121 17.5644 13.6415 17.4888 14.0955L17.3043 15.2028C17.1033 16.4082 16.0603 17.2918 14.8383 17.2918H5.16201C3.93991 17.2918 2.89693 16.4082 2.69603 15.2028L2.51147 14.0955C2.43581 13.6415 2.74249 13.2121 3.19647 13.1365Z"
+              fill="#181818" />
+          </svg>
 
         </button>
-    </div>
+      </div>
     </div>
   </section>
   <section class="future-section px-80">
@@ -407,7 +423,7 @@
         </div>
         <h2 class="fs_44 fs_md_35 fs_sm_28 fw_700 fw_sm_600 Global-black text-center pt-2">Starten Sie Ihre Zukunft in
           der Sales Academy </h2>
-        <p style="width: 100%; max-width:785px;" class="mt-3 fs_16 fw_400 ln_24 Nuetral-black-900 text-center m-auto">
+        <p style="width: 100%; max-width:785px;" class="mt-3 fs_16 fw_400 lh_24 Nuetral-black-900 text-center m-auto">
           Lorem ipsum dolor sit amet consectetur. Adipiscing venenatis id sed justo vitae in. Sed aliquet lacinia a
           risus lacus risus. Risus et diam porta adipiscing. Sem risus morbi phasellus non.</p>
       </div>
@@ -419,16 +435,16 @@
             </div>
             <h2 class="fs_24 fw_600 ln_32 Global-black mt_40">Starten Sie Ihre Zukunft in der Sales Academy</h2>
             <h3 class="fs_20 lh_30 Nuetral-black-900 mt_32">Als Arbeitssuchender registriert sein</h3>
-            <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">Sie müssen als Arbeitssuchender registriert sein, um
+            <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900">Sie müssen als Arbeitssuchender registriert sein, um
               für einen Bildungsgutschein berechtigt zu sein</p>
             <h3 class="fs_20 lh_30 Nuetral-black-900 mt_32">Deutschkenntnisse auf B2-Niveau</h3>
-            <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">Das ist wichtig, um eine reibungslose Kommunikation im
+            <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900">Das ist wichtig, um eine reibungslose Kommunikation im
               Kurs sicherzustellen</p>
             <h3 class="fs_20 lh_30 Nuetral-black-900 mt_32">Bereitschaft, 8 Monate Ihrer Zeit zu investieren</h3>
-            <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">Die Kursdauer ist optimal angepasst, um Ihnen alles
+            <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900">Die Kursdauer ist optimal angepasst, um Ihnen alles
               beizubringen, was Sie für Ihren Job benötigen</p>
             <h3 class="fs_20 lh_30 Nuetral-black-900 mt_32">Motivation und Lernbereitschaft mitbringen</h3>
-            <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">Wir bringen Ihnen alles bei, aber Sie müssen auch
+            <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900">Wir bringen Ihnen alles bei, aber Sie müssen auch
               selbst wollen</p>
           </div>
 
@@ -441,16 +457,16 @@
             </div>
             <h2 class="fs_24 fw_600 ln_32 Global-black mt_40">Start Your Future In Sales Academy</h2>
             <h3 class="fs_20 lh_30 Nuetral-black-900 mt_32">Forego your unemployment benefit</h3>
-            <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">With the education voucher you will continue to receive
+            <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900">With the education voucher you will continue to receive
               your unemployment benefit</p>
             <h3 class="fs_20 lh_30 Nuetral-black-900 mt_32">Have experience in sales</h3>
-            <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">Our trained teaching team will teach you everything
+            <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900">Our trained teaching team will teach you everything
               from A to Z so no previous knowledge is necessary</p>
             <h3 class="fs_20 lh_30 Nuetral-black-900 mt_32">Use your own PC or own one</h3>
-            <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">We will send you a new MacBook before the course starts
+            <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900">We will send you a new MacBook before the course starts
             </p>
             <h3 class="fs_20 lh_30 Nuetral-black-900 mt_32">Decide between your children and the course</h3>
-            <p class="pt-1 fs_16 fw_400 ln_24 Nuetral-black-900">Together we will always find a compromise so that you
+            <p class="pt-1 fs_16 fw_400 lh_24 Nuetral-black-900">Together we will always find a compromise so that you
               can also be there for your children</p>
           </div>
 
@@ -504,13 +520,13 @@
         </div>
         <h2 class="fs_44 fs_md_35 fs_sm_28 fw_700 fw_sm_600 Global-black text-center pt-2">Das Herz jedes erfolgreichen
           Unternehmens </h2>
-        <p style="width: 100%; max-width:785px;" class="mt-3 fs_16 fw_400 ln_24 Nuetral-black-900 text-center m-auto">
+        <p style="width: 100%; max-width:785px;" class="mt-3 fs_16 fw_400 lh_24 Nuetral-black-900 text-center m-auto">
           Gute Verkäufer sind für jedes Unternehmen von unschätzbarem Wert. Sie bilden das Herz erfolgreicher
           Verkaufsteams, tragen erheblich zur Steigerung des Umsatzes bei, schaffen langfristige Kundenbeziehungen und
           fördern das Wachstum und die Stabilität des Unternehmens.</p>
-          <div class="mt-4 m-auto d-flex justify-content-center">
-            <a href="#" class="non-binding-btn Global-black fs_16 fw_400 lh_24 text-decoration-none">Non-Binding
-                Inquiry</a>
+        <div class="mt-4 m-auto d-flex justify-content-center">
+          <a href="#" class="non-binding-btn Global-black fs_16 fw_400 lh_24 text-decoration-none">Non-Binding
+            Inquiry</a>
         </div>
       </div>
     </div>
@@ -561,7 +577,7 @@
       <div class="Careers_content">
         <div class="mx_850">
           <div class="m_auto_sm" style="width: fit-content;">
-            <p class="fs_16 fw_400 ln_24 Nuetral-black-800 pd_6_16 border-white radius_36"
+            <p class="fs_16 fw_400 lh_24 Nuetral-black-800 pd_6_16 border-white radius_36"
               style="border: 1px solid #D9DADF;">Careers
             </p>
           </div>
@@ -661,7 +677,7 @@
         </div>
         <h2 class="fs_44 fs_md_35 fs_sm_28 fw_700 fw_sm_600 Global-black text-center pt-2">Was sagen unsere Teilnehmer
           über uns? </h2>
-        <p style="width: 100%; max-width:785px;" class="mt-3 fs_16 fw_400 ln_24 Nuetral-black-900 text-center m-auto">
+        <p style="width: 100%; max-width:785px;" class="mt-3 fs_16 fw_400 lh_24 Nuetral-black-900 text-center m-auto">
           Gute Verkäufer sind für jedes Unternehmen von unschätzbarem Wert. Sie bilden das Herz erfolgreicher
           Verkaufsteams, tragen erheblich zur Steigerung des Umsatzes bei, schaffen langfristige Kundenbeziehungen und
           fördern das Wachstum und die Stabilität des Unternehmens.</p>
@@ -670,44 +686,47 @@
         <div class="row mt-4 ">
           <div class="col-lg-4 col-sm-6 mt-4">
             <div class="sagen-card">
-              <p  class="fs_16 fw_400 ln_24 Nuetral-black-900">
-                „Ich war äußerst zufrieden mit den Ergebnissen der Zusammenarbeit mit der Kreativagentur und kann sie nur wärmstens empfehlen...</p>
-                <h2 class="fs_18 fw_500 Global-black mt_32">Johan Doe</h2>
-                <div class="d-flex gap-1 pt-1">
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                </div>
+              <p class="fs_16 fw_400 lh_24 Nuetral-black-900">
+                „Ich war äußerst zufrieden mit den Ergebnissen der Zusammenarbeit mit der Kreativagentur und kann sie
+                nur wärmstens empfehlen...</p>
+              <h2 class="fs_18 fw_500 Global-black mt_32">Johan Doe</h2>
+              <div class="d-flex gap-1 pt-1">
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+              </div>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 mt-4">
             <div class="sagen-card">
-              <p  class="fs_16 fw_400 ln_24 Nuetral-black-900">
-                „Ich war äußerst zufrieden mit den Ergebnissen der Zusammenarbeit mit der Kreativagentur und kann sie nur wärmstens empfehlen...</p>
-                <h2 class="fs_18 fw_500 Global-black mt_32">Johan Doe</h2>
-                <div class="d-flex gap-1 pt-1">
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                </div>
+              <p class="fs_16 fw_400 lh_24 Nuetral-black-900">
+                „Ich war äußerst zufrieden mit den Ergebnissen der Zusammenarbeit mit der Kreativagentur und kann sie
+                nur wärmstens empfehlen...</p>
+              <h2 class="fs_18 fw_500 Global-black mt_32">Johan Doe</h2>
+              <div class="d-flex gap-1 pt-1">
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+              </div>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 mt-4">
             <div class="sagen-card">
-              <p  class="fs_16 fw_400 ln_24 Nuetral-black-900">
-                „Ich war äußerst zufrieden mit den Ergebnissen der Zusammenarbeit mit der Kreativagentur und kann sie nur wärmstens empfehlen...</p>
-                <h2 class="fs_18 fw_500 Global-black mt_32">Johan Doe</h2>
-                <div class="d-flex gap-1 pt-1">
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                </div>
+              <p class="fs_16 fw_400 lh_24 Nuetral-black-900">
+                „Ich war äußerst zufrieden mit den Ergebnissen der Zusammenarbeit mit der Kreativagentur und kann sie
+                nur wärmstens empfehlen...</p>
+              <h2 class="fs_18 fw_500 Global-black mt_32">Johan Doe</h2>
+              <div class="d-flex gap-1 pt-1">
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -715,267 +734,261 @@
       <!-- 1 -->
       <div id="zufrieden" class="position-relative slid carousel slide h-100 d-sm-none d-block mt-4">
         <div class="carousel-inner h-100">
-            <div class="carousel-item active h-100">
-              <div class="sagen-card">
-                <p  class="fs_16 fw_400 ln_24 Nuetral-black-900">
-                  „Ich war äußerst zufrieden mit den Ergebnissen der Zusammenarbeit mit der Kreativagentur und kann sie nur wärmstens empfehlen...</p>
-                  <h2 class="fs_18 fw_500 Global-black mt_32">Johan Doe</h2>
-                  <div class="d-flex gap-1 pt-1">
-                    <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                    <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                    <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                    <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                    <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  </div>
+          <div class="carousel-item active h-100">
+            <div class="sagen-card">
+              <p class="fs_16 fw_400 lh_24 Nuetral-black-900">
+                „Ich war äußerst zufrieden mit den Ergebnissen der Zusammenarbeit mit der Kreativagentur und kann sie
+                nur wärmstens empfehlen...</p>
+              <h2 class="fs_18 fw_500 Global-black mt_32">Johan Doe</h2>
+              <div class="d-flex gap-1 pt-1">
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
               </div>
             </div>
+          </div>
 
-            <div class="carousel-item  h-100">
-              <div class="sagen-card">
-                <p  class="fs_16 fw_400 ln_24 Nuetral-black-900">
-                  „Ich war äußerst zufrieden mit den Ergebnissen der Zusammenarbeit mit der Kreativagentur und kann sie nur wärmstens empfehlen...</p>
-                  <h2 class="fs_18 fw_500 Global-black mt_32">Johan Doe</h2>
-                  <div class="d-flex gap-1 pt-1">
-                    <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                    <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                    <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                    <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                    <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
-                  </div>
+          <div class="carousel-item  h-100">
+            <div class="sagen-card">
+              <p class="fs_16 fw_400 lh_24 Nuetral-black-900">
+                „Ich war äußerst zufrieden mit den Ergebnissen der Zusammenarbeit mit der Kreativagentur und kann sie
+                nur wärmstens empfehlen...</p>
+              <h2 class="fs_18 fw_500 Global-black mt_32">Johan Doe</h2>
+              <div class="d-flex gap-1 pt-1">
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
+                <i style="color:#FFCE22 ;" class="fa-solid fa-star"></i>
               </div>
             </div>
+          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#zufrieden"
-            data-bs-slide="prev">
-            <span class="span-left span-button" aria-hidden="true"><svg
-                    xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33"
-                    fill="none">
-                    <path
-                        d="M19.9999 24.9307C19.9999 24.9307 12 19.0388 12 16.9307C12 14.8224 20 8.93066 20 8.93066"
-                        stroke="#ACAFBB" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg></span>
-            <span class="visually-hidden">Previous</span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#zufrieden" data-bs-slide="prev">
+          <span class="span-left span-button" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="32"
+              height="33" viewBox="0 0 32 33" fill="none">
+              <path d="M19.9999 24.9307C19.9999 24.9307 12 19.0388 12 16.9307C12 14.8224 20 8.93066 20 8.93066"
+                stroke="#ACAFBB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></span>
+          <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#zufrieden"
-            data-bs-slide="next">
-            <span class="span-right span-button" aria-hidden="true"><svg
-                    xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33"
-                    fill="none">
-                    <path
-                        d="M12.0001 8.93066C12.0001 8.93066 20 14.8225 20 16.9307C20 19.0389 12 24.9307 12 24.9307"
-                        stroke="#ACAFBB" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg></span>
-            <span class="visually-hidden">Next</span>
+        <button class="carousel-control-next" type="button" data-bs-target="#zufrieden" data-bs-slide="next">
+          <span class="span-right span-button" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="32"
+              height="33" viewBox="0 0 32 33" fill="none">
+              <path d="M12.0001 8.93066C12.0001 8.93066 20 14.8225 20 16.9307C20 19.0389 12 24.9307 12 24.9307"
+                stroke="#ACAFBB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></span>
+          <span class="visually-hidden">Next</span>
         </button>
-    </div>
-    <!-- 22 -->
- 
+      </div>
+      <!-- 22 -->
+
     </div>
   </section>
 
 
-     <!-- --------------------------------------Common section--------------------------------------- -->
-     <section class="common_section py_80">
-      <div class="container">
-          <div class="row g-4">
-              <div class="col-12 col-md-7 common-section-content">
-                  <div class="d-flex flex-column justify-content-center gap-4">
-                      <div>
-                          <button class="team_button">Unser Team</button>
+  <!-- --------------------------------------Common section--------------------------------------- -->
+  <section class="common_section py_80">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-7 common-section-content">
+          <div class="d-flex flex-column justify-content-center gap-4">
+            <div>
+              <button class="team_button">Unser Team</button>
+            </div>
+            <div style="max-width: 556px;">
+              <h2 class="fs_30 fw_700 lh_38 family_Fira Global-black fs_md fs_sm">Are you ready to get
+                started with the Sales Academy?
+              </h2>
+            </div>
+            <div>
+              <p class="fs_16 lh_24 fw_400 family_Fira Nuetral-black-900">Lorem ipsum dolor sit amet
+                consectetur.
+                Elementum sed mauris sed quis consectetur orci. Suspendisse arcu turpis vulputate
+                commodo et eu
+                semper tellus quis. Fringilla lorem tortor feugiat nulla sed. Faucibus aliquam proin
+                tristique
+                elementum ut egestas.</p>
+            </div>
+            <div class="d-flex mt-2 justify-content-lg-start justify-content-center">
+              <a href="" class="non-binding-btn text-decoration-none Global-black fs_16 fw_400 family_Fira">Register
+                Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-5 carousel-column">
+          <div id="carouselExample" class="position-relative slid carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="bg-white carousel1">
+                  <div class="d-flex justify-content-between gap-2 p-4 ">
+                    <div class="">
+                      <img class="border carousel-img rounded-circle" src="assets/images/ghoona.svg" alt="">
+                    </div>
+                    <div class=" h-100">
+                      <div class="d-flex  flex-column gap-5">
+                        <div>
+                          <p class="fs_14 fw_400 family_Fira">Contact our education advisor
+                          </p>
+                          <h3 class="fs_20 fw_600 lh_30 family_Fira">Robert Rudolph</h3>
+                        </div>
+                        <div class="d-flex flex-column">
+                          <div>
+                            <div class="row">
+                              <div class="col-2">
+                                <img class="phone-img" src="assets/images/phone.svg" alt="">
+                              </div>
+
+                              <div class="col-10">
+                                <p class="fs_16 fw_400 family_Fira Nuetral-black-900">
+                                  03075437495</p>
+                                <p class="fs_16 fw_400 family_Fira Nuetral-black-900">
+                                  03075437495</p>
+                              </div>
+
+                            </div>
+
+                          </div>
+
+                          <div class="d-flex align-items-center gap-2">
+                            <div><img class="phone-img" src="assets/images/e-mail.svg" alt=""></div>
+                            <div>
+                              <p class="fs_16 fw_400 family_Fira Nuetral-black-900">
+                                robert.rudolph@sa-ak.de</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <div style="max-width: 556px;">
-                          <h2 class="fs_30 fw_700 lh_38 family_Fira Global-black fs_md fs_sm">Are you ready to get
-                              started with the Sales Academy?
-                          </h2>
-                      </div>
-                      <div>
-                          <p class="fs_16 lh_24 fw_400 family_Fira Nuetral-black-900">Lorem ipsum dolor sit amet
-                              consectetur.
-                              Elementum sed mauris sed quis consectetur orci. Suspendisse arcu turpis vulputate
-                              commodo et eu
-                              semper tellus quis. Fringilla lorem tortor feugiat nulla sed. Faucibus aliquam proin
-                              tristique
-                              elementum ut egestas.</p>
-                      </div>
-                      <div class="d-flex mt-2 justify-content-lg-start justify-content-center">
-                        <a href="" class="non-binding-btn text-decoration-none Global-black fs_16 fw_400 family_Fira">Register Now</a>
                     </div>
                   </div>
+                </div>
               </div>
-              <div class="col-12 col-md-5 carousel-column">
-                <div id="carouselExample" class="position-relative slid carousel slide">
-                  <div class="carousel-inner">
-                      <div class="carousel-item active">
-                          <div class="bg-white carousel1">
-                              <div class="d-flex justify-content-between gap-2 p-4 ">
-                                  <div class="">
-                                      <img class="border carousel-img rounded-circle"
-                                          src="assets/images/ghoona.svg" alt="">
-                                  </div>
-                                  <div class=" h-100">
-                                      <div class="d-flex  flex-column gap-5">
-                                          <div>
-                                              <p class="fs_14 fw_400 family_Fira">Contact our education advisor
-                                              </p>
-                                              <h3 class="fs_20 fw_600 lh_30 family_Fira">Robert Rudolph</h3>
-                                          </div>
-                                          <div class="d-flex flex-column">
-                                              <div>
-                                                  <div class="row">
-                                                      <div class="col-2">
-                                                          <img class="phone-img" src="assets/images/phone.svg"
-                                                              alt="">
-                                                      </div>
 
-                                                      <div class="col-10">
-                                                          <p class="fs_16 fw_400 family_Fira Nuetral-black-900">
-                                                              03075437495</p>
-                                                          <p class="fs_16 fw_400 family_Fira Nuetral-black-900">
-                                                              03075437495</p>
-                                                      </div>
-
-                                                  </div>
-
-                                              </div>
-
-                                              <div class="d-flex align-items-center gap-2">
-                                                  <div><img class="phone-img" src="assets/images/e-mail.svg"
-                                                          alt=""></div>
-                                                  <div>
-                                                      <p class="fs_16 fw_400 family_Fira Nuetral-black-900">
-                                                          robert.rudolph@sa-ak.de</p>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
+              <div class="carousel-item  h-100">
+                <div class="bg-white carousel1 h-100">
+                  <div class="d-flex justify-content-between gap-2 p-4 h-100">
+                    <div class="">
+                      <img class="border rounded-circle carousel-img" src="assets/images/ghoona.svg" alt="">
+                    </div>
+                    <div class=" h-100">
+                      <div class="d-flex justify-content-between flex-column gap-5">
+                        <div>
+                          <p class="fs_14 fw_400 family_Fira">Contact our education advisor
+                          </p>
+                          <h3 class="fs_20 fw_600 lh_30 family_Fira">Robert Rudolph</h3>
+                        </div>
+                        <div class="d-flex flex-column">
+                          <div>
+                            <div class="row">
+                              <div class="col-2">
+                                <img class="phone-img" src="assets/images/phone.svg" alt="">
                               </div>
-                          </div>
-                      </div>
 
-                      <div class="carousel-item  h-100">
-                          <div class="bg-white carousel1 h-100">
-                              <div class="d-flex justify-content-between gap-2 p-4 h-100">
-                                  <div class="">
-                                      <img class="border rounded-circle carousel-img"
-                                          src="assets/images/ghoona.svg" alt="">
-                                  </div>
-                                  <div class=" h-100">
-                                      <div class="d-flex justify-content-between flex-column gap-5">
-                                          <div>
-                                              <p class="fs_14 fw_400 family_Fira">Contact our education advisor
-                                              </p>
-                                              <h3 class="fs_20 fw_600 lh_30 family_Fira">Robert Rudolph</h3>
-                                          </div>
-                                          <div class="d-flex flex-column">
-                                              <div>
-                                                  <div class="row">
-                                                      <div class="col-2">
-                                                          <img class="phone-img" src="assets/images/phone.svg"
-                                                              alt="">
-                                                      </div>
-
-                                                      <div class="col-10">
-                                                          <p class="fs_16 fw_400 family_Fira Nuetral-black-900">
-                                                              03075437495</p>
-                                                          <p class="fs_16 fw_400 family_Fira Nuetral-black-900">
-                                                              03075437495</p>
-                                                      </div>
-
-                                                  </div>
-
-                                              </div>
-
-                                              <div class="d-flex align-items-center gap-2">
-                                                  <div><img class="phone-img" src="assets/images/e-mail.svg"
-                                                          alt=""></div>
-                                                  <div>
-                                                      <p class="fs_16 fw_400 family_Fira Nuetral-black-900">
-                                                          robert.rudolph@sa-ak.de</p>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
+                              <div class="col-10">
+                                <p class="fs_16 fw_400 family_Fira Nuetral-black-900">
+                                  03075437495</p>
+                                <p class="fs_16 fw_400 family_Fira Nuetral-black-900">
+                                  03075437495</p>
                               </div>
+
+                            </div>
+
                           </div>
+
+                          <div class="d-flex align-items-center gap-2">
+                            <div><img class="phone-img" src="assets/images/e-mail.svg" alt=""></div>
+                            <div>
+                              <p class="fs_16 fw_400 family_Fira Nuetral-black-900">
+                                robert.rudolph@sa-ak.de</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
+                    </div>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                      data-bs-slide="prev">
-                      <span class="span-left span-button" aria-hidden="true"><svg
-                              xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33"
-                              fill="none">
-                              <path
-                                  d="M19.9999 24.9307C19.9999 24.9307 12 19.0388 12 16.9307C12 14.8224 20 8.93066 20 8.93066"
-                                  stroke="#ACAFBB" stroke-width="2" stroke-linecap="round"
-                                  stroke-linejoin="round" />
-                          </svg></span>
-                      <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                      data-bs-slide="next">
-                      <span class="span-right span-button" aria-hidden="true"><svg
-                              xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33"
-                              fill="none">
-                              <path
-                                  d="M12.0001 8.93066C12.0001 8.93066 20 14.8225 20 16.9307C20 19.0389 12 24.9307 12 24.9307"
-                                  stroke="#ACAFBB" stroke-width="2" stroke-linecap="round"
-                                  stroke-linejoin="round" />
-                          </svg></span>
-                      <span class="visually-hidden">Next</span>
-                  </button>
+                </div>
               </div>
-              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="span-left span-button" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="32"
+                  height="33" viewBox="0 0 32 33" fill="none">
+                  <path d="M19.9999 24.9307C19.9999 24.9307 12 19.0388 12 16.9307C12 14.8224 20 8.93066 20 8.93066"
+                    stroke="#ACAFBB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="span-right span-button" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="32"
+                  height="33" viewBox="0 0 32 33" fill="none">
+                  <path d="M12.0001 8.93066C12.0001 8.93066 20 14.8225 20 16.9307C20 19.0389 12 24.9307 12 24.9307"
+                    stroke="#ACAFBB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
+        </div>
       </div>
+    </div>
   </section>
 
   <footer>
-      <div class="container">
-          <div class="d-flex  flex-wrap flex-md-nowrap align-items-center justify-content-between gap-3">
-              <div>
-                  <a href=""><img src="assets/images/logo-img 2.svg" alt=""></a>
-                  <div class="d-flex  align-items-center gap-3 pt_60">
-                      <a class="" href="#"><img src="assets/images/facebook.svg" alt=""></a>
-                      <a class="footer-icon rounded-circle" href="#"><img src="assets/images/insta.svg" alt=""></a>
-                      <a class="footer-icon rounded-circle" href="#"><img src="assets/images/linkedin.svg" alt=""></a>
-                  </div>
-              </div>
-              <div class="d-flex flex-wrap flex-md-nowrap gap-3 justify-content-between">
-                  <a class="fs_16 fw_400 family_Fira body-white text-decoration-none" href="">Terms and condition</a>
-                  <a class="fs_16 fw_400 family_Fira body-white text-decoration-none" href="">Privacy Policy</a>
-                  <a class="fs_16 fw_400 family_Fira body-white text-decoration-none" href="">Imprints</a>
-                  <a class="fs_16 fw_400 family_Fira body-white text-decoration-none" href="">Mission and Statment</a>
-              </div>
+    <div class="container">
+      <div class="d-flex  flex-wrap flex-md-nowrap align-items-center justify-content-between gap-3">
+        <div>
+          <a href=""><img src="assets/images/logo-img 2.svg" alt=""></a>
+          <div class="d-flex  align-items-center gap-3 pt_60">
+            <a class="" href="#"><img src="assets/images/facebook.svg" alt=""></a>
+            <a class="footer-icon rounded-circle" href="#"><img src="assets/images/insta.svg" alt=""></a>
+            <a class="footer-icon rounded-circle" href="#"><img src="assets/images/linkedin.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="d-flex flex-wrap flex-md-nowrap gap-3 justify-content-between">
+          <a class="fs_16 fw_400 family_Fira body-white text-decoration-none" href="">Terms and condition</a>
+          <a class="fs_16 fw_400 family_Fira body-white text-decoration-none" href="">Privacy Policy</a>
+          <a class="fs_16 fw_400 family_Fira body-white text-decoration-none" href="">Imprints</a>
+          <a class="fs_16 fw_400 family_Fira body-white text-decoration-none" href="">Mission and Statment</a>
+        </div>
 
   </footer>
   </div>
   <div class="footer-bar">
-      <div class="container">
-          <div class="d-flex flex-wrap flex-md-wrap  align-items-center justify-content-end footer-bar-kaka gap-3">
-              <div class="d-flex flex-wrap flex-md-nowrap align-items-center justify-content-between">
-                  <div><img src="assets/images/Partner.svg" alt=""></div>
-              </div>
-              <div class="d-flex  align-items-center justify-content-start gap-3 flex-wrap">
-                  <a href=""> <img class="img-fluid footer-bar-image1 " src="assets/images/1-removebg-preview 1.svg"
-                          alt=""></a>
-                  <a href=""> <img class="img-fluid footer-bar-image2 "
-                          src="assets/images/banner2-removebg-preview.svg" alt=""></a>
-                  <a href=""> <img class="img-fluid footer-bar-image3 "
-                          src="assets/images/banner3-removebg-preview.svg" alt=""></a>
-              </div>
-          </div>
+    <div class="container">
+      <div class="d-flex flex-wrap flex-md-wrap  align-items-center justify-content-end footer-bar-kaka gap-3">
+        <div class="d-flex flex-wrap flex-md-nowrap align-items-center justify-content-between">
+          <div><img src="assets/images/Partner.svg" alt=""></div>
+        </div>
+        <div class="d-flex  align-items-center justify-content-start gap-3 flex-wrap">
+          <a href=""> <img class="img-fluid footer-bar-image1 " src="assets/images/1-removebg-preview 1.svg" alt=""></a>
+          <a href=""> <img class="img-fluid footer-bar-image2 " src="assets/images/banner2-removebg-preview.svg"
+              alt=""></a>
+          <a href=""> <img class="img-fluid footer-bar-image3 " src="assets/images/banner3-removebg-preview.svg"
+              alt=""></a>
+        </div>
       </div>
+    </div>
   </div>
 
 
 
-
-
   <script src="./assets/js/bootstrap.js"></script>
+  <!--------------------------------- Jquery --------------------------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Jquery Localize -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localize/0.1.0/jquery.localize.min.js"
+    integrity="sha512-4ey3vzy6yNVmhaSgtKPZvOmm2AlfN6AWRxHWBsYGEtYIpuVEbXc5ZpoVPKMSkdRkgkb/TnlnpJCry6uPoCKCsQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localize/0.1.0/jquery.localize.js"
+    integrity="sha512-8cFOrybNSH+nRZ56bLnTW0ABP/qpx45QRZwuIvgjjQCIRVsEKDaqLtuq9QY5cJjlAz376K10rgHy/gc667K9NA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Jquery Localize Ends -->
+  <!-- custom-file -->
+  <script src="./assets/js/script.js"></script>
+
+
 </body>
 
 </html>
