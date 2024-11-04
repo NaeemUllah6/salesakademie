@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 * {
 
     margin: 0;
@@ -15,6 +15,9 @@
 body {
     font-family: "Fira Sans";
     font-style: normal;
+}
+.family_Inter {
+    font-family: Inter;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -48,10 +51,13 @@ h1, h2, h3, h4, h5, p {
 .secondary-950{color: var(--secondary-950, #163036);}
 .text-black2 {color: var(--text-black2, #262626);}
 .bg-green{background-color: #163036;}
-
+.Nuetral-50 { background-color: #F3F3F5;}
 
 .fs_60 {
     font-size: 60px;
+}
+.fs_14 {
+    font-size: 14px;
 }
 .fs_16 {
     font-size: 16px;
@@ -61,6 +67,9 @@ h1, h2, h3, h4, h5, p {
 }
 .fs_20{
     font-size: 20px;
+}
+.fs_22 {
+    font-size: 22px;
 }
 .fs_24{
     font-size: 24px;
@@ -81,14 +90,27 @@ h1, h2, h3, h4, h5, p {
 .fw_700 {
     font-weight: 700;
 }
+.fw_800 {
+    font-weight: 800;
+}
 .ln_32{
     line-height: 32px;
 }
-.ln_24{
+.lh_24{
     line-height: 24px;
+}
+.lh_28 {
+    line-height: 28px;
 }
 .lh_30{
     line-height: 30px;
+}
+.lh_32 {
+    line-height: 32px;
+}
+
+.lh_34 {
+    line-height: 34px;
 }
 .lh_72{
     line-height: 72px;
@@ -124,6 +146,23 @@ h1, h2, h3, h4, h5, p {
     max-width: 1111px;
     width: 100%;
     margin: 0 auto;
+}
+
+.pt_40 {
+    padding-top: 40px;
+}
+
+.pt_54 {
+    padding-top: 54px;
+}
+.pt_60 {
+    padding-top: 60px;
+}
+.p_24{
+    padding: 24px;
+}
+.py_80{
+    padding: 80px 0;
 }
 .bdr_lft_yellow{
     border-left: 2px solid #FCA311;

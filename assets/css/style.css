@@ -25,6 +25,24 @@ header .nav-menu a:hover{
 
 }
 
+/* switechr-btn */
+.language_toggle {
+    width: 70px;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 10px;
+    background: #FFF;
+}
+/*  */
+
+ 
+  
+
+
+
+
+/*  */
+
 .main_hero_sec{
    width: 100%;
    max-width: 1440px;
@@ -207,16 +225,179 @@ height: 100%;
 
 
 
+/* ------------------------------teaching Team------------------------------- */
+.teaching_team .nav-pills .nav-link.active,
+.teaching_team .nav-pills .show>.nav-link {
+    background-color: #FCA311;
+    color: #181818;
+    font-family: Fira Sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+
+}
+
+.teaching_team .nav-pills .nav-link {
+    font-family: Fira Sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    color: #181818;
+    padding: 9px 40px;
+}
+
+.teaching_team ul {
+    border: 1px solid #C6C8D0;
+    max-width: 654px;
+    border-radius: 12px;
+    padding: 12px;
+    margin-top: 80px;
+}
+
+/* .teaching_team .card {
+    max-width: 410px;
+} */
+
+.teaching_team .card img {
+    border-radius: 12px;
+}
+
+.teaching_team {
+    padding: 180px 0 80px;
+}
+
+.team_button {
+    padding: 6px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 36px;
+    border: 1px solid #D9DADF;
+    background-color: transparent;
+    width: fit-content;
+    font-family: Fira Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #484A54;
+
+}
+
+.main_content {
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+}
+/* ----------------------------------Partner---------------------------------- */
+.partner_hero{
+    background-image: url('../images/partner_hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 456px;
+    background-position: center center;
+}
+.parnter-hero-content{
+    max-width: 818px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 456px;
+}
+.partner_hero_p{
+    border:1px solid #D9DADF;
+    border-radius:36px;
+    padding: 6px 16px;
+    max-width: fit-content;
+}
+/* ----------------------------------Partner_body---------------------------------- */
+.partner_body{
+    padding: 80px 0;
+}
+.partner_body .body-content-1{
+    max-width: 950px;
+    width: 100%;
+}
+.partner_body .column-1{
+    max-width: 687px;
+    width: 100%;
+}
+.partner_body .row{
+    border-radius:24px;
+}
+
+/* ----------------------------------Common Section---------------------------------- */
+.common_section{
+    background-color:#FBFBFB;
+}
+.carousel-inner{
+    border-radius: 8px;
+
+}
+.carousel{
+    box-shadow: 0px 0px 12px 0px #0000000D;
+    background-color:white;
+    padding: 0px;
+    border-radius: 8px;
+}
+
+.carousel .span-button{
+    background-color:white;
+    padding: 5px;
+    box-shadow: 0px 0px 12px 0px #0000000D;
+    border-radius:200px;
+
+}
+.carousel .span-left{
+    margin-right: 60px;
+}
+.carousel .span-right{
+    margin-left: 60px;
+}
+.carousel-control-prev:focus .span-left svg path,
+.carousel-control-next:focus .span-right svg path {
+    stroke: #FCA311 !important;
+}
+.left-icon-small{
+   margin-bottom: 320px;
+}
+/* -------------------------------Footer-------------------------------- */
+footer{
+    padding: 50px 0;
+    background-color:#163036;
+}
+.footer-icon{
+    background-color:white;
+   padding: 4px 9px;;
+}
+.footer-bar{
+    padding: 37.5px 0;
+}
+footer a:hover{
+    color:#FCA311;
+}
+
+
 
 @media screen and (max-width: 1180px) {
     .hero-column-1 {
         padding: 40px 62px 63px;
     }  
 }
-
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1138px) {
     header .nav-menu a {
+        padding: 34px 10px;
         font-size: 14px;
+    } 
+}
+
+@media screen and (max-width: 1010px) {
+    header .nav-menu a {
+        font-size: 13px;
     }
 }
 
