@@ -51,7 +51,7 @@ header .nav-menu a:hover{
    padding-top: 92px;
 }
 .hero-column-1{
-    padding: 96px 80px 63px;
+    padding: 96px 40px 63px;
     background: var(--Nuetral-nuetral-50, #F3F3F5);
 box-shadow: 0px 4px 21.7px 0px rgba(255, 255, 255, 0.10);
 }
@@ -477,7 +477,14 @@ footer a:hover{
     .kursdauer-icon svg{
         width: 30px;
         height: 30px;
-    }  
+    } 
+    .language_toggle {
+        border-radius: 6px;
+        padding: 6px 6px;
+    }
+    .header-top img{
+        width: 100px;
+    } 
 }
 @media screen and (max-width: 375px) {
     .fs_60 {
@@ -488,6 +495,9 @@ footer a:hover{
     }
     .sales-span::after {
         width: 227px;
+    }
+    .language_toggle {
+        width: 50px;
     }
 
 }

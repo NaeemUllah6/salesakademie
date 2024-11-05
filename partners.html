@@ -2,12 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="website title">
+    <meta name="description"
+        content="Explore a world of knowledge and learning on our education website. Discover a wide range of courses, tutorials, and resources designed to help you excel academically. Join our community of learners and embark on a journey of intellectual growth.">
+    <link rel="icon" href="assets/images/icons/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/common.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/naeem.css">
+    <link rel="stylesheet" href="./assets/css/my-style.css">
     <title>Parnter | Sales Akademie</title>
 </head>
 
@@ -15,75 +20,100 @@
 
     <header class="w-100">
         <div class="header-top">
-            <div class="container">
-                <div class="d-flex align-items-center justify-content-between py-lg-0 py-3">
-                    <a href="index.html"><img src="./assets/images/main-logo.png" alt="main-logo"></a>
-                    <!-- Hamburger button for small screens -->
-                    <div class="col-6 d-lg-none text-end">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
-                            <span class="navbar-toggler-icon">
-                                <svg width="20" height="14" viewBox="0 0 20 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 7H19M1 1H19M1 13H19" stroke="#42307D" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </span>
-                        </button>
-                    </div>
-
-                    <!-- Menu Section (visible on larger screens) -->
-                    <div class="d-lg-flex d-none nav-menu">
-                        <a class="Global-black fs_16 fw_400 lh_24" href="index.html">Home</a>
-                        <a class="Global-black fs_16 fw_400 lh_24" href="ForEmpAgency.html">For Employment Agencies</a>
-                        <a class="Global-black fs_16 fw_400 lh_24" href="teaching_team.html">The Teaching Team</a>
-                        <a class="Global-black fs_16 fw_400 lh_24" href="course-structure.html">Course Structure</a>
-                        <a class="Global-black fs_16 fw_400 lh_24" href="partners.html">Partner</a>
-                    </div>
-                    <!-- Custom Button Section -->
-                    <div class="d-lg-block d-none">
-                        <a href="#"
-                            class="non-binding-btn Global-black fs_16 fw_400 lh_24 text-decoration-none">Non-Binding
-                            Inquiry</a>
-                    </div>
+          <div class="container">
+            <div class="d-flex align-items-center justify-content-between py-lg-0 py-3">
+              <a href="index.html"><img src="./assets/images/main-logo.png" alt="main-logo"></a>
+              <!-- Hamburger button for small screens -->
+              <div class="d-flex d-lg-none w-100 justify-content-end">
+                <select class="language_toggle">
+                  <option value="en">En</option>
+                  <option value="gr">Gr</option>
+                </select>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                  aria-controls="offcanvasMenu">
+                  <span class="navbar-toggler-icon">
+                    <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 7H19M1 1H19M1 13H19" stroke="#42307D" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+    
+              <!-- Menu Section (visible on larger screens) -->
+              <div class="d-lg-flex d-none nav-menu">
+                <a class="Global-black fs_16 fw_400 lh_24" data-localize="home" href="index.html">Home</a>
+                <a class="Global-black fs_16 fw_400 lh_24" data-localize="foremp" href="ForEmpAgency.html">For Employment
+                  Agencies</a>
+                <a class="Global-black fs_16 fw_400 lh_24" data-localize="teaching_team" href="teaching_team.html">The
+                  Teaching Team</a>
+                <a class="Global-black fs_16 fw_400 lh_24" data-localize="course_str" href="course-structure.html">Course
+                  Structure</a>
+                <a class="Global-black fs_16 fw_400 lh_24" data-localize="partner" href="partners.html">Partner</a>
+              </div>
+              <!-- Custom Button Section -->
+              <div class="d-flex align-items-center gap-3">
+                <!-- <div class="switcher">
+                  <select class="select2 language_toggle">
+                    <option value="en">EN</option>
+                    <option value="cz">CZ</option>
+                    </select>
+                </div> -->
+                <select class="language_toggle d-lg-block d-none">
+                  <option value="en">En</option>
+                  <option value="gr">Gr</option>
+                </select>
+                <div class="d-lg-block d-none">
+                  <a href="#" data-localize="heaer__btn"
+                    class="non-binding-btn Global-black fs_16 fw_400 lh_24 text-decoration-none">Non-Binding
+                    Inquiry</a>
                 </div>
+              </div>
             </div>
-
-            <!-- Offcanvas Menu for small screens -->
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
-                <div class="offcanvas-header">
-                    <a href=""><img src="./assets/images/main-logo.png" alt="main-logo"></a>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div class="d-flex gap-4 flex-column">
-                        <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" href="index.html">Home</a>
-                        <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" href="ForEmpAgency.html">For Employment
-                            Agencies</a>
-                        <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" href="teaching_team.html">The Teaching Team</a>
-                        <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" href="course-structure.html">Course Structure</a>
-                        <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" href="partners.html">Partner</a>
-                    </div>
-                    <div class="pt-4">
-                        <a style="width:fit-content" href="#"
-                            class="non-binding-btn Global-black fs_16 fw_400 lh_24 text-decoration-none d-block">Non-Binding
-                            Inquiry</a>
-
-                    </div>
-                </div>
+          </div>
+    
+          <!-- Offcanvas Menu for small screens -->
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+            <div class="offcanvas-header">
+              <a href=""><img src="./assets/images/main-logo.png" alt="main-logo"></a>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
+            <div class="offcanvas-body">
+              <div class="d-flex gap-4 flex-column">
+                <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" data-localize="home"
+                  href="index.html">Home</a>
+                <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" data-localize="foremp"
+                  href="ForEmpAgency.html">For Employment
+                  Agencies</a>
+                <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" data-localize="teaching_team"
+                  href="teaching_team.html">The Teaching
+                  Team</a>
+                <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" data-localize="course_str"
+                  href="course-structure.html">Course
+                  Structure</a>
+                <a class="Global-black fs_16 fw_400 lh_24 text-decoration-none" data-localize="partner"
+                  href="partners.html">Partner</a>
+              </div>
+              <div class="pt-4">
+                <a style="width:fit-content" href="#" data-localize="heaer__btn"
+                  class="non-binding-btn Global-black fs_16 fw_400 lh_24 text-decoration-none d-block">Non-Binding
+                  Inquiry</a>
+    
+              </div>
+            </div>
+          </div>
         </div>
-    </header>
+      </header>
 
 
     <section class="partner_hero py_80">
         <div class="container">
             <div class="d-flex align-items-center justify-content-center flex-column parnter-hero-content">
-                <p class="fs_16 lh_24 fw_400 family_Fira body-white partner_hero_p text-center">For effective networking
+                <p class="fs_16 lh_24 fw_400 family_Fira body-white partner_hero_p text-center" data-localize="effective">For effective networking
                     and always up to date</p>
-                <h2 class="fs_44 fw_700 lh_54 family_Fira pt-2 pb-4 text-white text-center fs_md fs_sm">Our partners
+                <h2 class="fs_44 fw_700 lh_54 family_Fira pt-2 pb-4 text-white text-center fs_md fs_sm" data-localize="Our-partners">Our partners
                     from industry</h2>
-                <p class="fs_16 lh_24 fw_400 family_Fira text-white text-center">Lorem ipsum dolor sit amet consectetur.
+                <p class="fs_16 lh_24 fw_400 family_Fira text-white text-center" data-localize="amet-consectetur">Lorem ipsum dolor sit amet consectetur.
                     Condimentum lacus donec risus orci vel fermentum semper. Purus
                     dolor vel semper diam tortor et tristique. Eget posuere vel augue volutpat nibh. Velit leo vel duis
                     adipiscing.</p>
@@ -94,18 +124,18 @@
         <div class="container">
             <div class="d-flex flex-wrap flex-md-nowrap justify-content-between align-items-end gap-4">
                 <div class="body-content-1">
-                    <p class="fs_16 lh_24 fw_400 family_Fira Nuetral-black-800 partner_hero_p text-start team_button">
+                    <p class="fs_16 lh_24 fw_400 family_Fira Nuetral-black-800 partner_hero_p text-start team_button" data-localize="Quereinstieg">
                         Lateral entry into digital sales</p>
-                    <h2 class="fs_44 fw_700 lh_54 family_Fira pt-2 pb-4 Global-black fs_md fs_sm text-align-center">Our
+                    <h2 class="fs_44 fw_700 lh_54 family_Fira pt-2 pb-4 Global-black fs_md fs_sm text-align-center" data-localize="course">Our
                         course modules at a glance
                     </h2>
 
-                    <p class="fs_16 lh_24 fw_400 family_Fira Nuetral-black-900 text-align-center">Our dedicated teachers
+                    <p class="fs_16 lh_24 fw_400 family_Fira Nuetral-black-900 text-align-center" data-localize="dedicated-teachers">Our dedicated teachers
                         bring a wealth of experience and expertise in digital sales. Each team member is committed to
                         imparting the latest insights and best practices in digital sales to help participants.</p>
                 </div>
                 <button
-                    class="non-binding-btn border-0 mx-auto text-decoration-none Global-black fs_16 fw_400 family_Fira ">For
+                    class="non-binding-btn border-0 mx-auto text-decoration-none Global-black fs_16 fw_400 family_Fira "data-localize="Caledaly">For
                     Caledaly</button>
             </div>
             <div class="container pt_60">
@@ -115,10 +145,10 @@
                     </div>
                     <div class="col-12 col-md-8">
                         <div class="column-1">
-                            <h2 class="fs_30 fw_700 lh_38 family_Fira pt-2 pb-4 Global-black">Moss - Efficient solutions
+                            <h2 class="fs_30 fw_700 lh_38 family_Fira pt-2 pb-4 Global-black" data-localize="Moss-Efficient">Moss - Efficient solutions
                                 for expense control and financial management
                             </h2>
-                            <p class="fs_16 lh_24 fw_400 family_Fira Nuetral-black-900">Moss is a financial services
+                            <p class="fs_16 lh_24 fw_400 family_Fira Nuetral-black-900" data-localize="Moss-is">Moss is a financial services
                                 company that offers a wide range of products and services for businesses. Products
                                 offered include corporate cards, receipts, digital invoice management, refunds, budget
                                 control, insights, accounting & integrations, approval policies, Apple Pay and virtual
@@ -134,10 +164,10 @@
 
                     <div class="col-12 col-md-8 order-2 order-lg-1">
                         <div class="column-1">
-                            <h2 class="fs_30 fw_700 lh_38 family_Fira pt-2 pb-4 Global-black">Sennder - The future of
+                            <h2 class="fs_30 fw_700 lh_38 family_Fira pt-2 pb-4 Global-black" data-localize="Sennder-p">Sennder - The future of
                                 digital logistics
                             </h2>
-                            <p class="fs_16 lh_24 fw_400 family_Fira Nuetral-black-900">Sennder is a leading logistics
+                            <p class="fs_16 lh_24 fw_400 family_Fira Nuetral-black-900" data-localize="leading-logistics">Sennder is a leading logistics
                                 company that is redefining the transportation industry through innovative technology and
                                 services. With their digital approach, they optimize transportation processes, increase
                                 efficiency and minimize environmental impact. Sennder offers a comprehensive solution
@@ -156,37 +186,39 @@
                     </div>
                     <div class="col-12 col-md-8 ">
                         <div class="column-1">
-                            <h2 class="fs_30 fw_700 lh_38 family_Fira pt-2 pb-4 Global-black fs_md fs_sm">Cosuno -
+                            <h2 class="fs_30 fw_700 lh_38 family_Fira pt-2 pb-4 Global-black fs_md fs_sm" data-localize="Cosuno">Cosuno -
                                 Easily manage construction projects digitally
                             </h2>
-                            <p class="fs_16 lh_24 fw_400 family_Fira Nuetral-black-900">Cosuno is an innovative company
+                            <p class="fs_16 lh_24 fw_400 family_Fira Nuetral-black-900" data-localize="innovative-company">Cosuno is an innovative company
                                 that specializes in the digitalization and optimization of construction projects. With
                                 its advanced software solution, Cosuno is revolutionizing the construction industry by
                                 simplifying processes and reducing costs. Its team of experts ensures that construction
                                 projects run smoothly and efficiently.</p>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- -------------------------------------Commmon Section-------------------------------------- -->
+    <!-- --------------------------------------Common section--------------------------------------- -->
     <section class="common_section py_80">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-12 col-md-7 common-section-content">
+            <div>
+                <button class="team_button d-block mb-4" data-localize="txt86">Contact us</button>
+            </div>
+            <div class="row">
+                <div class="col-lg-7 col-md-6 common-section-content">
                     <div class="d-flex flex-column justify-content-center gap-4">
-                        <div>
-                            <button class="team_button">Unser Team</button>
-                        </div>
-                        <div style="max-width: 556px;">
-                            <h2 class="fs_30 fw_700 lh_38 family_Fira Global-black fs_md fs_sm">Are you ready to get
+                        <div style="">
+                            <h2 class="fs_44 fs_md_35 fs_sm_28 fw_700 lh_38 family_Fira Global-black fs_md fs_sm"
+                                data-localize="txt87">Are you ready to get
                                 started with the Sales Academy?
                             </h2>
                         </div>
                         <div>
-                            <p class="fs_16 lh_24 fw_400 family_Fira Nuetral-black-900">Lorem ipsum dolor sit amet
+                            <p class="fs_16 lh_24 fw_400 family_Fira Nuetral-black-900" data-localize="txt88">Lorem
+                                ipsum dolor sit amet
                                 consectetur.
                                 Elementum sed mauris sed quis consectetur orci. Suspendisse arcu turpis vulputate
                                 commodo et eu
@@ -195,12 +227,15 @@
                                 elementum ut egestas.</p>
                         </div>
                         <div class="d-flex mt-2 justify-content-lg-start justify-content-center">
-                            <a href="" class="non-binding-btn text-decoration-none Global-black fs_16 fw_400 family_Fira">Register Now</a>
+                            <a href=""
+                                class="non-binding-btn text-decoration-none Global-black fs_16 fw_400 family_Fira"
+                                data-localize="txt89">Register
+                                Now</a>
                         </div>
-                        
                     </div>
                 </div>
-                <div class="col-12 col-md-5 carousel-column">
+                <div class="col-lg-1 d-none d-lg-block"></div>
+                <div class="col-lg-4 col-md-6 carousel-column">
                     <div id="carouselExample" class="position-relative slid carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -213,9 +248,11 @@
                                         <div class=" h-100">
                                             <div class="d-flex  flex-column gap-5">
                                                 <div>
-                                                    <p class="fs_14 fw_400 family_Fira">Contact our education advisor
+                                                    <p class="fs_14 fw_400 family_Fira" data-localize="txt90">Contact
+                                                        our education advisor
                                                     </p>
-                                                    <h3 class="fs_20 fw_600 lh_30 family_Fira">Robert Rudolph</h3>
+                                                    <h3 class="fs_20 fw_600 lh_30 family_Fira" data-localize="txt91">
+                                                        Robert Rudolph</h3>
                                                 </div>
                                                 <div class="d-flex flex-column">
                                                     <div>
@@ -228,7 +265,8 @@
                                                             <div class="col-10">
                                                                 <p class="fs_16 fw_400 family_Fira Nuetral-black-900">
                                                                     03075437495</p>
-                                                                <p class="fs_16 fw_400 family_Fira Nuetral-black-900">
+                                                                <p
+                                                                    class="fs_16 fw_400 family_Fira Nuetral-black-900 pt-2">
                                                                     03075437495</p>
                                                             </div>
 
@@ -236,7 +274,7 @@
 
                                                     </div>
 
-                                                    <div class="d-flex align-items-center gap-2">
+                                                    <div class="d-flex align-items-center gap-2 pt-2">
                                                         <div><img class="phone-img" src="assets/images/e-mail.svg"
                                                                 alt=""></div>
                                                         <div>
@@ -261,9 +299,11 @@
                                         <div class=" h-100">
                                             <div class="d-flex justify-content-between flex-column gap-5">
                                                 <div>
-                                                    <p class="fs_14 fw_400 family_Fira">Contact our education advisor
+                                                    <p class="fs_14 fw_400 family_Fira" data-localize="txt90">Contact
+                                                        our education advisor
                                                     </p>
-                                                    <h3 class="fs_20 fw_600 lh_30 family_Fira">Robert Rudolph</h3>
+                                                    <h3 class="fs_20 fw_600 lh_30 family_Fira" data-localize="txt91">
+                                                        Robert Rudolph</h3>
                                                 </div>
                                                 <div class="d-flex flex-column">
                                                     <div>
@@ -276,7 +316,8 @@
                                                             <div class="col-10">
                                                                 <p class="fs_16 fw_400 family_Fira Nuetral-black-900">
                                                                     03075437495</p>
-                                                                <p class="fs_16 fw_400 family_Fira Nuetral-black-900">
+                                                                <p
+                                                                    class="fs_16 fw_400 family_Fira Nuetral-black-900 pt-2">
                                                                     03075437495</p>
                                                             </div>
 
@@ -284,7 +325,7 @@
 
                                                     </div>
 
-                                                    <div class="d-flex align-items-center gap-2">
+                                                    <div class="d-flex align-items-center gap-2 pt-2">
                                                         <div><img class="phone-img" src="assets/images/e-mail.svg"
                                                                 alt=""></div>
                                                         <div>
@@ -341,10 +382,14 @@
                     </div>
                 </div>
                 <div class="d-flex flex-wrap flex-md-nowrap gap-3 justify-content-between">
-                    <a class="fs_16 fw_400 family_Fira body-white text-decoration-none" href="">Terms and condition</a>
-                    <a class="fs_16 fw_400 family_Fira body-white text-decoration-none" href="">Privacy Policy</a>
-                    <a class="fs_16 fw_400 family_Fira body-white text-decoration-none" href="">Imprints</a>
-                    <a class="fs_16 fw_400 family_Fira body-white text-decoration-none" href="">Mission and Statment</a>
+                    <a class="fs_16 fw_400 family_Fira body-white text-decoration-none" href=""
+                        data-localize="txt92">Terms and condition</a>
+                    <a class="fs_16 fw_400 family_Fira body-white text-decoration-none" href=""
+                        data-localize="txt93">Privacy Policy</a>
+                    <a class="fs_16 fw_400 family_Fira body-white text-decoration-none" href=""
+                        data-localize="txt94">Imprints</a>
+                    <a class="fs_16 fw_400 family_Fira body-white text-decoration-none" href=""
+                        data-localize="txt95">Mission and Statment</a>
                 </div>
 
     </footer>
@@ -367,7 +412,24 @@
         </div>
     </div>
 
+
+
     <script src="./assets/js/bootstrap.js"></script>
+    <!--------------------------------- Jquery --------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Jquery Localize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localize/0.1.0/jquery.localize.min.js"
+        integrity="sha512-4ey3vzy6yNVmhaSgtKPZvOmm2AlfN6AWRxHWBsYGEtYIpuVEbXc5ZpoVPKMSkdRkgkb/TnlnpJCry6uPoCKCsQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localize/0.1.0/jquery.localize.js"
+        integrity="sha512-8cFOrybNSH+nRZ56bLnTW0ABP/qpx45QRZwuIvgjjQCIRVsEKDaqLtuq9QY5cJjlAz376K10rgHy/gc667K9NA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Jquery Localize Ends -->
+    <!-- custom-file -->
+    <script src="./assets/js/script.js"></script>
+
 
 </body>
 
