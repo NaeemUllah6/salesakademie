@@ -49,6 +49,7 @@ header .nav-menu a:hover{
    margin: 0 auto;
    background: var(--secondary-950, #163036);
    padding-top: 92px;
+   overflow: hidden;
 }
 .hero-column-1{
     padding: 96px 40px 63px;

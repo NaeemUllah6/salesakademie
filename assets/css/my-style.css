@@ -176,18 +176,18 @@
 
 .accordion-button:not(.collapsed)::after {
   background-image: url(../images/icons/not-closed.png);
-
+  transform: rotate(-0deg);
 }
 
 .accordion-button::after {
   background-image: url(../images/icons/closed.png);
 }
 
-.fade:not(.show) {
+.faq_sec .fade:not(.show) {
   opacity: 1 !important;
 }
 
-.tab-content>.tab-pane {
+.faq_sec .tab-content>.tab-pane {
   display: block;
 }
 
