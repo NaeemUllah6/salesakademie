@@ -421,6 +421,9 @@ footer a:hover{
         justify-content: center;
         margin-top: -6px;
     }
+    .Nachster{
+        margin-top: 0px;
+    }
 
 }
 @media screen and (max-width: 550px) {
